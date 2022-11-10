@@ -7,6 +7,7 @@
 
 #gameTitle {
     font-size: 54px;
+    color: white;
 }
 
 #homePage {
@@ -25,7 +26,7 @@ div {
 
 #homePage > div:nth-child(2) {
     position: relative;
-    bottom: 63px;
+    bottom: 78px;
 }
 
 #homePage > div:nth-child(3) > button {
@@ -54,16 +55,28 @@ div {
 }
 
 #homePage > div:first-child {
-    width: 300px;
-    height: 300px;
-    border: 1px solid red;
+    width: 325px;
+    height: 325px;
+    /* border: 1px solid red; */
+    background: url(../img/updated-img1.png);
+    object-fit: cover;
+    /* background-position: center; */
+    background-size: cover;
 }
 
 #homePage > div:nth-child(3) {
-    bottom: 133px;
+    bottom: 142px;
     position: relative;
 }
 
 #homePage > img {
+    width: 100vw;
+    height: 100vh;
     position: absolute;
+    object-fit: cover;
+    padding: 0;
+}
+
+#homePage > div {
+    z-index: 1;
 }
