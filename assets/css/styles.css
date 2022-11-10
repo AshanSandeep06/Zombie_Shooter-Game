@@ -1,13 +1,15 @@
 /* Imported the Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 #gameTitle, #homePage > div:nth-child(3) > button {
     font-family: Poppins, sans-serif;
 }
 
 #gameTitle {
-    font-size: 54px;
+    font-size: 68px;
     color: white;
+    font-family: 'Gugi', cursive;
 }
 
 #homePage {
@@ -65,7 +67,7 @@ div {
 }
 
 #homePage > div:nth-child(3) {
-    bottom: 142px;
+    bottom: 136px;
     position: relative;
 }
 
