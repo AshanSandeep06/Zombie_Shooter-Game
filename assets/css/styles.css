@@ -10,6 +10,7 @@
 }
 
 #homePage {
+    position: relative;
     width: 100vw;
     height: 100vh;
     flex-direction: column;
@@ -61,4 +62,8 @@ div {
 #homePage > div:nth-child(3) {
     bottom: 133px;
     position: relative;
+}
+
+#homePage > img {
+    position: absolute;
 }
