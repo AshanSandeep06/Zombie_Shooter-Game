@@ -1,11 +1,11 @@
 /* Imported the Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-#gameTitle{
+#gameTitle, #homePage > div:nth-child(2) > button {
     font-family: Poppins, sans-serif;
 }
 
-#homePage{
+#homePage {
     width: 100vw;
     height: 100vh;
     flex-direction: column;
@@ -14,6 +14,32 @@
     justify-content: space-around;
 }
 
-div{
+div {
     text-align: center;
+}
+
+#homePage > div:first-child {
+    position: relative;
+    bottom: 120px;
+}
+
+#homePage > div:nth-child(2) > button {
+    font-size: 23px;
+    border-radius: 39px;
+    border: 7px solid #ADAAAA;
+    padding: 10px 28px 10px 75px;
+    display: inline-flex;
+    position: relative;
+}
+
+#btnPlay {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    border-radius: 100%;
+    background: url(../img/play1.png);
+    background-position: center;
+    background-size: cover;
 }
