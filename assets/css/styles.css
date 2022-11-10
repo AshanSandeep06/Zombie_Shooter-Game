@@ -4,3 +4,16 @@
 #gameTitle{
     font-family: Poppins, sans-serif;
 }
+
+#homePage{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    /* row-gap: 540px; */
+    justify-content: space-around;
+}
+
+div{
+    text-align: center;
+}
