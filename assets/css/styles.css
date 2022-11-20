@@ -101,3 +101,39 @@ div {
 #homePageSection > div {
     z-index: 1;
 }
+
+#leftArrowKey, #rightArrowKey, #upArrowKey {
+    width: 30px;
+    height: 30px;
+    bottom: 3px;
+}
+
+#spaceKey {
+    width: 65px;
+    height: 65px;
+    bottom: 42px;
+}
+
+#gameControlSection {
+    color: white;
+    position: absolute;
+    width: 430px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    bottom: 10px;
+    right: 6px;
+    row-gap: 11px;
+    align-items: center;
+    padding-top: 16px;
+    /* background: black;*/
+}
+
+#gameControlSection h6, #gameControlSection img {
+    position: relative;
+}
+
+#gameControlSection > section {
+    display: flex;
+    column-gap: 13px;
+}
