@@ -10,6 +10,7 @@
     font-size: 68px;
     color: white;
     font-family: 'Gugi', cursive;
+    text-shadow: 0 6px 3px rgba(0, 0, 0, 0.25);
 }
 
 #homePage {
@@ -42,7 +43,7 @@ div {
     position: relative;
     background-color: #11517c;
     color: white;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 18px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 #btnPlay {
@@ -52,8 +53,7 @@ div {
     left: -1px;
     bottom: 0;
     border-radius: 100%;
-    background: url(../img/play1.png);
-    background-position: center;
+    background: url(../img/play1.png) center;
     background-size: cover;
 }
 
