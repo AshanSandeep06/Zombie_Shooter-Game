@@ -13,7 +13,7 @@
     text-shadow: 0 6px 3px rgba(0, 0, 0, 0.25);
 }
 
-#homePage {
+#homePageSection {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -27,13 +27,13 @@ div {
     text-align: center;
 }
 
-#homePage > div:nth-child(2) {
+#homePageSection > div:nth-child(2) {
     position: relative;
     /*bottom: 78px;*/
     bottom: 83px;
 }
 
-#homePage > div:nth-child(3) > button {
+#homePageSection > div:nth-child(3) > button {
     width: 180px;
     font-size: 23px;
     border-radius: 39px;
@@ -68,7 +68,7 @@ div {
     cursor: pointer;
 }
 
-#homePage > div:first-child {
+#homePageSection > div:first-child {
     /*width: 325px;
     height: 325px;
     !* border: 1px solid red; *!
@@ -79,18 +79,18 @@ div {
 }
 
 /* 2022-11-20 newly added */
-#homePage > div:first-child > img {
+#homePageSection > div:first-child > img {
     width: 325px;
     height: 325px;
     object-fit: cover;
 }
 
-#homePage > div:nth-child(3) {
+#homePageSection > div:nth-child(3) {
     bottom: 134px;
     position: relative;
 }
 
-#homePage > img {
+#homePageSection > img {
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -98,6 +98,6 @@ div {
     padding: 0;
 }
 
-#homePage > div {
+#homePageSection > div {
     z-index: 1;
 }
