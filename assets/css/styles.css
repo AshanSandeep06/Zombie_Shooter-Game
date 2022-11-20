@@ -58,13 +58,20 @@ div {
 }
 
 #homePage > div:first-child {
-    width: 325px;
+    /*width: 325px;
     height: 325px;
-    /* border: 1px solid red; */
+    !* border: 1px solid red; *!
     background: url(../img/updated-img1.png);
     object-fit: cover;
-    /* background-position: center; */
-    background-size: cover;
+    !* background-position: center; *!
+    background-size: cover;*/
+}
+
+/* 2022-11-20 newly added */
+#homePage > div:first-child > img {
+    width: 325px;
+    height: 325px;
+    object-fit: cover;
 }
 
 #homePage > div:nth-child(3) {
