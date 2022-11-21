@@ -238,7 +238,7 @@ div {
 #rocket {
     /*border: 2px solid red;*/
     position: absolute;
-    bottom: -12px;
+    bottom: -7px;
 }
 
 #rocket > img {
@@ -251,7 +251,7 @@ div {
     object-fit: cover;*/
 
     width: 75px;
-    height: 155px;
+    height: 136px;
     object-fit: cover;
 }
 
