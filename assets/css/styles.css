@@ -212,7 +212,7 @@ div {
     font-size: 24px;
 }
 
-#gamePlaySection > section:first-child > div {
+#btnStartPlay {
     position: relative;
     background: url(../img/playButton2.png) center;
     background-size: cover;
