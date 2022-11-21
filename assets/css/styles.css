@@ -225,3 +225,23 @@ div {
 #btnStartPlay {
     cursor: pointer;
 }
+
+#rocket {
+    /*border: 2px solid red;*/
+    position: absolute;
+    bottom: -12px;
+}
+
+#rocket > img {
+    /*width: 130px;
+    height: 138px;
+    object-fit: cover;*/
+
+    /*width: 136px;
+    height: 145px;
+    object-fit: cover;*/
+
+    width: 75px;
+    height: 155px;
+    object-fit: cover;
+}
