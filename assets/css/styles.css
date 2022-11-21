@@ -31,7 +31,9 @@ div {
 #homePageSection > div:nth-child(2) {
     position: relative;
     /*bottom: 78px;*/
-    bottom: 83px;
+
+    /*bottom: 83px;*/
+    bottom: 76px;
 }
 
 #homePageSection > div:nth-child(3) > button {
@@ -81,13 +83,18 @@ div {
 
 /* 2022-11-20 newly added */
 #homePageSection > div:first-child > img {
-    width: 325px;
+    /*width: 325px;
     height: 325px;
+    object-fit: cover;*/
+
+    width: 296px;
+    height: 296px;
     object-fit: cover;
 }
 
 #homePageSection > div:nth-child(3) {
-    bottom: 134px;
+    /*bottom: 134px;*/
+    bottom: 126px;
     position: relative;
 }
 
