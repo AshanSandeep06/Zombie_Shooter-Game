@@ -188,7 +188,7 @@ div {
     font-size: 18px;
 }
 
-#gamePlayContainerSection > div:nth-child(3){
+#gamePlayContainerSection > div:nth-child(3) {
     position: absolute;
     font-family: Ubuntu, sans-serif;
     left: 15px;
@@ -209,4 +209,18 @@ div {
 #gamePlayContainerSection > div:nth-child(3) > label:nth-child(2) {
     color: white;
     font-size: 24px;
+}
+
+#gamePlayContainerSection > section:first-child > div {
+    position: relative;
+    background: url(../img/playButton2.png) center;
+    background-size: cover;
+    width: 190px;
+    height: 75px;
+    top: 33px;
+    /* left: 22px;*/
+}
+
+#btnStartPlay{
+    cursor: pointer;
 }

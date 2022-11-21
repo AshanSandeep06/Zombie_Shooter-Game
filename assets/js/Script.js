@@ -2,7 +2,7 @@ let [milliseconds, seconds, minutes] = [0, 0, 0];
 let time = $('#lblTime');
 let intervalID = -1;
 
-$(function () {
+$('#btnStartPlay').on('click', function () {
     clearInterval(intervalID);
     intervalID = setInterval(displayTimer, 10);
 
@@ -23,4 +23,6 @@ $(function () {
 
         time.text(`${m} : ${s} : ${ms}`);
     }
+
+    $('#btnStartPlay').fadeOut(500);
 });
