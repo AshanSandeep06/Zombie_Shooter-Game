@@ -2,6 +2,10 @@ let [milliseconds, seconds, minutes] = [0, 0, 0];
 let time = $('#lblTime');
 let intervalID = -1;
 
+$(function (){
+    $('#gamePlaySection').css('display', 'none');
+});
+
 $('#btnStartPlay').on('click', function () {
     clearInterval(intervalID);
     intervalID = setInterval(displayTimer, 10);
