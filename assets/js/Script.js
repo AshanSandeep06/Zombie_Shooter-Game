@@ -10,7 +10,7 @@ $(function () {
 
 $('#btnPlay').on('click', function () {
     $('#homePageSection').css('display', 'none');
-    $('#gamePlaySection').css('display', 'flex');
+    $('#gamePlaySection').fadeIn(1000);
 });
 
 $('#btnStartPlay').on('click', function () {
