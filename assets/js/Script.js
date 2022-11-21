@@ -2,8 +2,15 @@ let [milliseconds, seconds, minutes] = [0, 0, 0];
 let time = $('#lblTime');
 let intervalID = -1;
 
-$(function (){
+$(function () {
     $('#gamePlaySection').css('display', 'none');
+    $('.hs').css('display', 'none');
+    $('#btnStartPlay').css('display', 'block');
+});
+
+$('#btnPlay').on('click', function () {
+    $('#homePageSection').css('display', 'none');
+    $('#gamePlaySection').css('display', 'flex');
 });
 
 $('#btnStartPlay').on('click', function () {
@@ -29,4 +36,5 @@ $('#btnStartPlay').on('click', function () {
     }
 
     $('#btnStartPlay').fadeOut(500);
+    $('.hs').fadeIn(1000);
 });
