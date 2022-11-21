@@ -159,11 +159,13 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1050px;
-    height: 85%;
+    /*width: 1165px;*/
+    /*height: 85%;*/
+    width: 1033px;
+    height: 90%;
     padding: 0;
     object-fit: cover;
     border-radius: 36px;
-    background: url(../img/ce2d_5590_200611.jpg) center;
+    background: url(../img/photo1.jpg) center;
     background-size: cover;
 }
