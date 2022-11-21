@@ -262,8 +262,13 @@ div {
 .zombies > img {
     /* width: 129px;
      height: 200px;*/
-    width: 100px;
+
+    /*width: 100px;
     height: 154px;
+    object-fit: cover;*/
+
+    width: 90px;
+    height: 138px;
     object-fit: cover;
 }
 
