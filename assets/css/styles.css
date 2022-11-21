@@ -169,3 +169,44 @@ div {
     background: url(../img/photo1.jpg) center;
     background-size: cover;
 }
+
+#gamePlayContainerSection > div:nth-child(2) {
+    width: 230px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    right: 5px;
+    top: 15px;
+    font-size: 28px;
+}
+
+#gamePlayContainerSection > div:nth-child(2) > input {
+    font-size: 18px;
+}
+
+#gamePlayContainerSection > div:nth-child(3){
+    position: absolute;
+    font-family: Ubuntu, sans-serif;
+    left: 15px;
+    top: 15px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 13px;
+}
+
+#gamePlayContainerSection > div:nth-child(3) > label:first-child {
+    color: white;
+    font-size: 29px;
+}
+
+#gamePlayContainerSection > div:nth-child(3) > label:nth-child(2) {
+    color: white;
+    font-size: 24px;
+}
