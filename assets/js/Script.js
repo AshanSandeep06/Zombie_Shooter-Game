@@ -46,16 +46,21 @@ $(document).on('keydown', function (event) {
     var rocketPosition = $("#rocket").position();
 
     // To Move left, the Rocket
+    // 37 ---> ArrowLeft
     if (event.keyCode === 37 && rocketPosition.left > 0) {
         $("#rocket").css('left', rocketPosition.left - 15 + 'px');
     }
 
     // To Move right, the Rocket
+    // 39 ---> ArrowRight
     if (event.keyCode === 39 && rocketPosition.left <= 956) {
         $("#rocket").css('left', rocketPosition.left + 15 + 'px');
     }
 
-    // To Send bullets from the Rocket
+    // To Fire bullets from the Rocket
+    // 38 ---> ArrowUp && 32 ---> Space
+    if (event.keyCode === 38 || event.keyCode === 32) {
 
+    }
 
 });
