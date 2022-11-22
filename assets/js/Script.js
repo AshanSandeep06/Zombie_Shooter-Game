@@ -4,12 +4,13 @@ let intervalID = -1;
 
 $(function () {
     $('#gamePlaySection').css('display', 'none');
-    $('.hs').css('display', 'none');
+    $('.hs, .bullet').css('display', 'none');
     $('#btnStartPlay').css('display', 'block');
 });
 
 $('#btnPlay').on('click', function () {
     $('#homePageSection').css('display', 'none');
+    $('.bullet').css('display', 'block');
     $('#gamePlaySection').fadeIn(1000);
 });
 
@@ -59,8 +60,31 @@ $(document).on('keydown', function (event) {
 
     // To Fire bullets from the Rocket
     // 38 ---> ArrowUp && 32 ---> Space
-    if (event.keyCode === 38 || event.keyCode === 32) {
-
+    if ($('#btnStartPlay').css('display') === "none") {
+        if (event.keyCode === 38 || event.keyCode === 32) {
+            if (event.keyCode === 38) {
+                fireBullets(rocketPosition);
+            } else {
+                fireBullets(rocketPosition);
+            }
+        }
     }
 
 });
+
+function fireBullets(rocketPosition) {
+    var bullet = $('<div>');
+    bullet.css('display', 'none');
+    bullet.attr('class', 'bullet');
+    $("#gamePlayContainer").append(bullet);
+
+    setInterval(positioningBullets, 10, {rocketPosition, bullet});
+}
+
+function positioningBullets(obj) {
+    var bulletPosition = parseInt(window.getComputedStyle($(obj.bullet).get(0)).getPropertyValue("bottom"));
+
+    obj.bullet.css('left', obj['rocketPosition'].left + "px");
+    obj.bullet.css('display', 'block');
+    obj.bullet.css('bottom', bulletPosition + 10 + "px");
+}
