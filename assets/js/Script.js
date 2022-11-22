@@ -42,6 +42,17 @@ $('#btnStartPlay').on('click', function () {
 /* --------------------------------------------------------------------------------------------------- */
 
 /* To Move the rocket to left or right and sending bullets */
-$(document).on('keydown', function () {
+$(document).on('keydown', function (event) {
+    var rocketPosition = $("#rocket").position();
+
+    // To Move left, the Rocket
+    if (event.keyCode === 37 && rocketPosition.left > 0) {
+        $("#rocket").css('left', rocketPosition.left - 15 + 'px');
+    }
+
+    // To Move right, the Rocket
+    if (event.keyCode === 39 && rocketPosition.left <= 956) {
+        $("#rocket").css('left', rocketPosition.left + 15 + 'px');
+    }
 
 });
