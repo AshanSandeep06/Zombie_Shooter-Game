@@ -39,6 +39,8 @@ $('#btnStartPlay').on('click', function () {
     $('.hs').fadeIn(1000);
 });
 
+/* --------------------------------------------------------------------------------------------------- */
+
 /* To Move the rocket to left or right and sending bullets */
 $(document).on('keydown', function () {
 
