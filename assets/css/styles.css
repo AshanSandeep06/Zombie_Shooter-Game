@@ -291,3 +291,7 @@ div {
 #gamePlayContainer > div:nth-child(7) {
     left: 53vw;
 }
+
+.hiddenZombies{
+    display: none;
+}
