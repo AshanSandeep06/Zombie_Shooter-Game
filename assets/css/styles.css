@@ -174,10 +174,7 @@ div {
     width: 1033px;
     height: 90%;
     padding: 0;
-    object-fit: cover;
     border-radius: 36px;
-    background: url(../img/photo1.jpg) center;
-    background-size: cover;
 }
 
 #gamePlaySection > div:nth-child(2) {
@@ -272,23 +269,23 @@ div {
     object-fit: cover;
 }
 
-#gamePlayContainer > div:nth-child(4) {
+#gamePlayContainer > div:nth-child(5) {
     left: 2vw;
 }
 
-#gamePlayContainer > div:nth-child(5) {
+#gamePlayContainer > div:nth-child(6) {
     left: 13vw;
 }
 
-#gamePlayContainer > div:nth-child(6) {
+#gamePlayContainer > div:nth-child(7) {
     left: 27vw;
 }
 
-#gamePlayContainer > div:nth-child(7) {
+#gamePlayContainer > div:nth-child(8) {
     left: 36vw
 }
 
-#gamePlayContainer > div:nth-child(8) {
+#gamePlayContainer > div:nth-child(9) {
     left: 53vw;
 }
 
@@ -297,6 +294,19 @@ div {
 }
 
 #bullet {
-    background: url("../img/rocket1.png") center;
+    background: url(../img/bullet1.png) center;
     background-size: cover;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 113px;
+}
+
+#gamePlayContainer > img:first-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 36px;
 }
