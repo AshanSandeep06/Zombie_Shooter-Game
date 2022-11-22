@@ -293,7 +293,7 @@ div {
     display: none;
 }
 
-#bullet {
+.bullet {
     background: url(../img/bullet2.png) center;
     background-size: cover;
     position: absolute;
