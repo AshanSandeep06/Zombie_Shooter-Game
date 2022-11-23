@@ -88,3 +88,5 @@ function positioningBullets(obj) {
     obj.bullet.css('display', 'block');
     obj.bullet.css('bottom', bulletPosition + 10 + "px");
 }
+
+/* Straight Forwarding Zombies */
