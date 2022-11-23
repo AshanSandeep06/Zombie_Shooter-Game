@@ -78,7 +78,7 @@ function fireBullets(rocketPosition) {
     bullet.attr('class', 'bullet');
     $("#gamePlayContainer").append(bullet);
 
-    setInterval(positioningBullets, 10, {rocketPosition, bullet});
+    setInterval(positioningBullets, 8, {rocketPosition, bullet});
 }
 
 function positioningBullets(obj) {
@@ -90,3 +90,4 @@ function positioningBullets(obj) {
 }
 
 /* Straight Forwarding Zombies */
+
