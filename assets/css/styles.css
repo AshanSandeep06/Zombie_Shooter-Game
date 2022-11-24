@@ -262,9 +262,15 @@ div {
     background: url(../img/bullet2.png) center;
     background-size: cover;
     position: absolute;
-    bottom: 128px;
-    left: 477px;
-    width: 86px;
+    bottom: 124px;
+
+     left: 478px;
+     width: 86px;
+
+   /*  2022-11-24
+    left: 504px;
+    width: 31px;*/
+
     height: 65px;
     /*z-index: -1;*/
 }

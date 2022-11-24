@@ -1,6 +1,7 @@
 let [milliseconds, seconds, minutes] = [0, 0, 0];
 let time = $('#lblTime');
 let intervalID = -1;
+$("#txtScore").val(0);
 
 $(function () {
     $('#gamePlaySection').css('display', 'none');
@@ -90,4 +91,5 @@ function positioningBullets(obj) {
 }
 
 /* Straight Forwarding Zombies */
+
 
