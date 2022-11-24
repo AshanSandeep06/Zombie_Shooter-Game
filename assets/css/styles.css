@@ -309,6 +309,7 @@ div {
     color: white;
     height: 62px;
     justify-content: center !important;
+    border: none;
 }
 
 .modal-footer {
@@ -316,6 +317,7 @@ div {
     padding-left: 13px;
     margin: 0;
     column-gap: 7px;
+    border: none;
 }
 
 .modal-title{
@@ -326,4 +328,29 @@ div {
 #btnNext{
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 16px;
+}
+
+.modal-content{
+    /*background: radial-gradient(black, transparent);*/
+    opacity: 98%;
+    color: white;
+
+    /*background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(5px);*/
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    border: none;
+
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
 }
