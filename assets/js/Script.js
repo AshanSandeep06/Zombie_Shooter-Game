@@ -122,3 +122,22 @@ function destroyingZombies(bullet) {
         }
     }
 }
+
+let movZomIntervalID = window.setInterval(moveZombies, 750);
+var count = 0;
+
+function moveZombies() {
+    var displayedZombies = $('.display-zombies');
+
+    for (let zombie of displayedZombies) {
+        var randomValue = Math.floor((Math.random() * 50) + 1);
+
+        var existTopValue = parseInt($(zombie).css('top'));
+        var newTopValue = existTopValue + randomValue;
+        $(zombie).css('top', newTopValue + "px");
+
+        if (newTopValue > 679) {
+            count++;
+        }
+    }
+}
