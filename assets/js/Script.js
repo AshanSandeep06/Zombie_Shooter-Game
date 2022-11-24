@@ -89,9 +89,36 @@ function positioningBullets(obj) {
     obj.bullet.css('display', 'block');
     obj.bullet.css('bottom', bulletPosition + 10 + "px");
 
-    destroyingZombies();
+    destroyingZombies($(obj.bullet).get(0));
 }
 
-function destroyingZombies(){
+// run the currently selected effect
+/*function runEffect(object) {
+    console.log($(object))
+    var options = {};
+    var selectedEffect = 'explode';
+    // Run the effect
+    $(object).hide( selectedEffect, options, 1000, this.callback);
 
+    this.callback = function() {
+        setTimeout(function() {
+            $(object).removeAttr( "style" ).hide();
+        }, 1000 );
+    }
+
+}*/
+
+function destroyingZombies(bullet) {
+    var displayedZombies = $('.display-zombies');
+
+    for (let zombie of displayedZombies) {
+        var bulletPosition = bullet.getBoundingClientRect();
+        var zombiePosition = $(zombie).get(0).getBoundingClientRect();
+
+        if (bulletPosition.right <= zombiePosition.right && bulletPosition.left >= zombiePosition.left &&
+            bulletPosition.top >= zombiePosition.top && bulletPosition.bottom <= zombiePosition.bottom) {
+            $(zombie).css('display', 'none');
+            // runEffect($(zombie));
+        }
+    }
 }
