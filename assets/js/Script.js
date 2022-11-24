@@ -3,6 +3,8 @@ let time = $('#lblTime');
 let intervalID = -1;
 $("#txtScore").val(0);
 
+const shootSound = new Audio('assets/audio/ShootSound1.mp3');
+
 $(function () {
     $('#gamePlaySection').css('display', 'none');
     $('.hs, .bullet').css('display', 'none');
@@ -81,6 +83,12 @@ function fireBullets(rocketPosition) {
 
     setInterval(positioningBullets, 8, {rocketPosition, bullet});
 }
+
+$(document).on('keypress', function (event) {
+    if (event.keyCode === 38 || event.keyCode === 32) {
+        shootSound.play();
+    }
+});
 
 function positioningBullets(obj) {
     var bulletPosition = parseInt(window.getComputedStyle($(obj.bullet).get(0)).getPropertyValue("bottom"));
