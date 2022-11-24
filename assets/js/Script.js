@@ -83,9 +83,11 @@ function fireBullets(rocketPosition) {
 }
 
 $(document).on('keyup', function (event) {
-    if (event.keyCode === 38 || event.keyCode === 32) {
-        var shootSound = new Audio('assets/audio/ShootSound.mp3');
-        shootSound.play();
+    if($('.hs').css('display') === 'block'){
+        if (event.keyCode === 38 || event.keyCode === 32) {
+            var shootSound = new Audio('assets/audio/ShootSound.mp3');
+            shootSound.play();
+        }
     }
 });
 
