@@ -3,8 +3,6 @@ let time = $('#lblTime');
 let intervalID = -1;
 $("#txtScore").val(0);
 
-const shootSound = new Audio('assets/audio/ShootSound1.mp3');
-
 $(function () {
     $('#gamePlaySection').css('display', 'none');
     $('.hs, .bullet').css('display', 'none');
@@ -86,6 +84,7 @@ function fireBullets(rocketPosition) {
 
 $(document).on('keypress', function (event) {
     if (event.keyCode === 38 || event.keyCode === 32) {
+        var shootSound = new Audio('assets/audio/ShootSound1.mp3');
         shootSound.play();
     }
 });
