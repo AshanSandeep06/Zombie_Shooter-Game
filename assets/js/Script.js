@@ -88,6 +88,10 @@ function positioningBullets(obj) {
     obj.bullet.css('left', obj['rocketPosition'].left + "px");
     obj.bullet.css('display', 'block');
     obj.bullet.css('bottom', bulletPosition + 10 + "px");
+
+    destroyingZombies();
 }
 
-/* Straight Forwarding Zombies */
+function destroyingZombies(){
+
+}
