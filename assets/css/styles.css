@@ -239,19 +239,23 @@ div {
 }
 
 #gamePlayContainer > div:nth-child(5) {
-    left: 13vw;
+    left: 12vw;
 }
 
 #gamePlayContainer > div:nth-child(6) {
-    left: 27vw;
+    left: 23vw;
 }
 
 #gamePlayContainer > div:nth-child(7) {
-    left: 36vw
+    left: 32vw;
 }
 
 #gamePlayContainer > div:nth-child(8) {
-    left: 53vw;
+    left: 46vw;
+}
+
+#gamePlayContainer > div:nth-child(9) {
+    left: 57vw;
 }
 
 .hiddenZombies {
