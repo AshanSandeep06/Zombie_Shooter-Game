@@ -91,5 +91,3 @@ function positioningBullets(obj) {
 }
 
 /* Straight Forwarding Zombies */
-
-
