@@ -82,7 +82,7 @@ function fireBullets(rocketPosition) {
     setInterval(positioningBullets, 8, {rocketPosition, bullet});
 }
 
-$(document).on('keypress', function (event) {
+$(document).on('keyup', function (event) {
     if (event.keyCode === 38 || event.keyCode === 32) {
         var shootSound = new Audio('assets/audio/ShootSound1.mp3');
         shootSound.play();
