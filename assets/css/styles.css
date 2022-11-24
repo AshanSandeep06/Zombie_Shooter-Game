@@ -354,3 +354,21 @@ div {
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
 }
+
+@keyframes modal-animation {
+    0%{
+        transform: scale(1.00);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+.modal-content {
+    animation-name: modal-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
