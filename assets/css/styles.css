@@ -229,9 +229,10 @@ div {
     height: 154px;
     object-fit: cover;*/
 
-    width: 125px;
-    height: 138px;
-    object-fit: cover;
+    width: 110px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
 }
 
 #gamePlayContainer > div:nth-child(4) {
@@ -268,12 +269,12 @@ div {
     position: absolute;
     bottom: 124px;
 
-     left: 478px;
-     width: 86px;
+    left: 478px;
+    width: 86px;
 
-   /*  2022-11-24
-    left: 504px;
-    width: 31px;*/
+    /*  2022-11-24
+     left: 504px;
+     width: 31px;*/
 
     height: 65px;
     /*z-index: -1;*/
