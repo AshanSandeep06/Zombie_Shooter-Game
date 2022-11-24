@@ -84,7 +84,7 @@ function fireBullets(rocketPosition) {
 
 $(document).on('keyup', function (event) {
     if (event.keyCode === 38 || event.keyCode === 32) {
-        var shootSound = new Audio('assets/audio/ShootSound1.mp3');
+        var shootSound = new Audio('assets/audio/ShootSound.mp3');
         shootSound.play();
     }
 });
