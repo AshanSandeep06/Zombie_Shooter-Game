@@ -7,6 +7,9 @@ $(function () {
     $('#gamePlaySection').css('display', 'none');
     $('.hs, .bullet').css('display', 'none');
     $('#btnStartPlay').css('display', 'block');
+
+    /* For GameWin modal (This modal is not closed when click outside of this modal) */
+    $('#gameWinModal').modal({backdrop: 'static', keyboard: false});
 });
 
 $('#btnPlay').on('click', function () {
