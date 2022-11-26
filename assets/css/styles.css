@@ -376,6 +376,24 @@ div {
     animation-timing-function: linear;
 }
 
+@keyframes playButton-animation {
+    0% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1.00);
+    }
+}
+
+#btnStartPlay {
+    animation-name: playButton-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
 #victory{
     position: absolute;
     top: 15px;
