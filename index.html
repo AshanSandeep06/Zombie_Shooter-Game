@@ -167,6 +167,9 @@
         <label class="form-label" id="lblLevel">Level 1</label>
     </div>
 
+    <!-- ===================================================================================================== -->
+
+    <!-- Game Win Modal -->
     <!--<button style="position:absolute; width: 100px; height: 100px;" type="button" class="btn btn-success align-self-end"
             data-bs-toggle="modal"
             data-bs-target="#gameWinModal">+ Add Customer
@@ -188,6 +191,7 @@
                 <div class="modal-body">
                     <h5 class="" id="play_time">Time : 00:00</h5>
                     <h5 class="" id="your_score">Your Score : 0</h5>
+                    <h1 id="victory">Victory</h1>
                 </div>
 
 
@@ -200,6 +204,34 @@
             </div>
         </div>
     </div>
+
+
+    <!-- ===================================================================================================== -->
+
+    <!-- Game Lost Modal -->
+    <div class="modal fade" id="gameLostModal" tabindex="-1"
+         aria-labelledby="exampleModalLabel2"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gameLostModalTitle">Game Over</h5>
+                </div>
+
+
+                <div class="modal-body">
+                    <h5 class="" id="gameLost_play_time">Time : 00:00</h5>
+                    <h5 class="" id="gameLost_your_score">Your Score : 0</h5>
+                </div>
+
+
+                <div class="modal-footer row">
+                    <button id="gameLostBtnTryAgain" type="button" class="btn btn-success col-3">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </main>
 

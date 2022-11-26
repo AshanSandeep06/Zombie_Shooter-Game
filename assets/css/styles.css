@@ -337,6 +337,7 @@ div {
     flex-direction: column;
     align-items: start;
     row-gap: 16px;
+    position: relative;
 }
 
 .modal-content {
@@ -373,4 +374,12 @@ div {
     animation-duration: 1s;
     animation-direction: alternate;
     animation-timing-function: linear;
+}
+
+#victory{
+    position: absolute;
+    top: 15px;
+    right: 180px;
+    color: crimson;
+    font-weight: 700;
 }
