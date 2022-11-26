@@ -309,9 +309,14 @@ div {
 .modal-header {
     background: linear-gradient(90deg, rgba(15, 12, 93, 1) 0%, rgba(24, 24, 140, 1) 35%, rgba(9, 205, 247, 1) 100%);
     color: white;
-    height: 62px;
+    /* height: 62px; */
+    height: 76px;
     justify-content: center !important;
     border: none;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+    padding-bottom: 16px;
 }
 
 .modal-footer {
@@ -323,7 +328,7 @@ div {
 }
 
 .modal-title {
-    position: absolute;
+    /*position: absolute;*/
     font-size: 28px;
 }
 
@@ -411,4 +416,9 @@ div {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+#progressBar{
+    width: 92%;
+    position: relative;
 }
