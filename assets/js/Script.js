@@ -176,6 +176,7 @@ function moveZombies() {
         if (destroyedZombiesCount === displayedZombies.length) {
             $('#rocket').css('display', 'none');
             clearInterval(intervalID);
+            clearInterval(movZomIntervalID);
             $('#gameWinModal').modal('show');
             $('#gameWinModal').show();
         }
