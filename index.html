@@ -36,7 +36,7 @@
     </div>
 
     <div>
-        <button class="btn btn-outline-success" id="btnPlay" type="button">
+        <button class="btn btn-outline-success animate__animated animate__flipInY" id="btnPlay" type="button">
             Play
 
             <div></div>
@@ -78,7 +78,7 @@
         <img alt="Background Image" src="assets/img/photo1.jpg">
 
         <!-- Play Button -->
-        <div id="btnStartPlay" class="animate__animated animate__bounceInLeft"></div>
+        <div id="btnStartPlay" class="animate__animated animate__flip"></div>
 
         <!-- Rocket div -->
         <div id="rocket" class="hs">
@@ -172,10 +172,10 @@
     <!-- ===================================================================================================== -->
 
     <!-- Game Win Modal -->
-    <!--<button style="position:absolute; width: 100px; height: 100px;" type="button" class="btn btn-success align-self-end"
+    <button style="position:absolute; width: 100px; height: 100px;" type="button" class="btn btn-success align-self-end"
             data-bs-toggle="modal"
             data-bs-target="#gameWinModal">+ Add Customer
-    </button>-->
+    </button>
 
     <!-- Modal -->
     <div class="modal fade" id="gameWinModal" tabindex="-1"
@@ -194,6 +194,8 @@
                     <h5 class="" id="play_time">Time : 00:00</h5>
                     <h5 class="" id="your_score">Your Score : 0</h5>
                     <h1 id="victory">Victory</h1>
+
+                    <img src="assets/img/zombie1.png" alt="zombieImage">
                 </div>
 
 
@@ -209,6 +211,11 @@
 
 
     <!-- ===================================================================================================== -->
+
+    <button style="position:absolute; left:0;width: 100px; height: 100px;" type="button" class="btn btn-success align-self-end"
+            data-bs-toggle="modal"
+            data-bs-target="#gameLostModal">+ Add Customer
+    </button>
 
     <!-- Game Lost Modal -->
     <div class="modal fade" id="gameLostModal" tabindex="-1"

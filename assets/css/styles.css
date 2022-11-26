@@ -401,3 +401,14 @@ div {
     color: crimson;
     font-weight: 700;
 }
+
+.modal-body > img{
+    width: 150px;
+    height: 150px;
+    /* object-fit: cover; */
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

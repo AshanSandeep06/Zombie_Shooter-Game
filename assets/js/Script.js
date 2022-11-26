@@ -11,6 +11,7 @@ $(function () {
 
     /* For GameWin modal (This modal is not closed when click outside of this modal) */
     $('#gameWinModal').modal({backdrop: 'static', keyboard: false});
+    $('#gameLostModal').modal({backdrop: 'static', keyboard: false});
 });
 
 $('#btnPlay').on('click', function () {
@@ -160,7 +161,6 @@ function moveZombies() {
             clearInterval(movZomIntervalID);
             $('#gameLostModal').modal('show');
             $('#gameLostModal').show();
-            $('#gameLostModal').modal({backdrop: 'static', keyboard: false});
         }
 
         var destroyedZombiesCount = 0;
@@ -178,7 +178,6 @@ function moveZombies() {
             clearInterval(intervalID);
             $('#gameWinModal').modal('show');
             $('#gameWinModal').show();
-            $('#gameWinModal').modal({backdrop: 'static', keyboard: false});
         }
     }
 }
@@ -200,5 +199,4 @@ $('#btnPlayAgain').on('click', function () {
 
     $('#btnStartPlay').css('display', 'block');
     $('#lblTime').text("00 : 00 : 00");
-    $('#gameWinModal').modal({backdrop: 'document', keyboard: true});
 });
