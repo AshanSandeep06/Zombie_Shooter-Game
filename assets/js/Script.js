@@ -153,7 +153,14 @@ function moveZombies() {
         $(zombie).css('top', newTopValue + "px");
 
         if (newTopValue > 679) {
-            count++;
+            // count++;
+            /* 2022-11-26 */
+            $('#rocket').css('display', 'none');
+            clearInterval(intervalID);
+            clearInterval(movZomIntervalID);
+            $('#gameLostModal').modal('show');
+            $('#gameLostModal').show();
+            $('#gameLostModal').modal({backdrop: 'static', keyboard: false});
         }
 
         var destroyedZombiesCount = 0;
