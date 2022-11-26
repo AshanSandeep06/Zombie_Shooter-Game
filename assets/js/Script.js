@@ -5,7 +5,7 @@ $("#txtScore").val(0);
 let movZomIntervalID = -1;
 
 $(function () {
-    $('#level1_section').css('display', 'none');
+    $('#level_1_section').css('display', 'none');
     $('.hs, .bullet').css('display', 'none');
     $('#btnStartPlay').css('display', 'block');
 
@@ -16,7 +16,7 @@ $(function () {
 $('#btnPlay').on('click', function () {
     $('#homePageSection').css('display', 'none');
     $('.bullet').css('display', 'block');
-    $('#level1_section').fadeIn(1000);
+    $('#level_1_section').fadeIn(1000);
 });
 
 function displayTimer() {
@@ -83,7 +83,7 @@ function fireBullets(rocketPosition) {
     var bullet = $('<div>');
     bullet.css('display', 'none');
     bullet.attr('class', 'bullet');
-    $("#gamePlayContainer").append(bullet);
+    $("#level_1_gamePlayContainer").append(bullet);
 
     setInterval(positioningBullets, 8, {rocketPosition, bullet});
 }
@@ -175,8 +175,8 @@ function moveZombies() {
 }
 
 $('#btnPlayAgain').on('click', function () {
-    /*$('#level1_section').css('display', 'none');
-    $('#level1_section').fadeIn(1000);*/
+    /*$('#level_1_section').css('display', 'none');
+    $('#level_1_section').fadeIn(1000);*/
 
     $('#gameWinModal').modal('hide');
     clearInterval(intervalID);
