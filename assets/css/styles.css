@@ -201,6 +201,8 @@ div {
 #rocket {
     position: absolute;
     bottom: -7px;
+    width: 75px;
+    height: 136px;
 }
 
 #rocket > img {
