@@ -2,6 +2,7 @@ let [milliseconds, seconds, minutes] = [0, 0, 0];
 let time = $('#lblTime');
 let intervalID = -1;
 $("#txtScore").val(0);
+let movZomIntervalID = -1;
 
 $(function () {
     $('#gamePlaySection').css('display', 'none');
@@ -18,30 +19,32 @@ $('#btnPlay').on('click', function () {
     $('#gamePlaySection').fadeIn(1000);
 });
 
+function displayTimer() {
+    milliseconds += 10;
+    if (milliseconds === 1000) {
+        milliseconds = 0;
+        seconds++;
+        if (seconds === 60) {
+            seconds = 0;
+            minutes++;
+        }
+    }
+
+    let m = minutes < 10 ? "0" + minutes : minutes;
+    let s = seconds < 10 ? "0" + seconds : seconds;
+    let ms = milliseconds < 10 ? "0" + milliseconds : String(milliseconds).substring(0, 2);
+
+    time.text(`${m} : ${s} : ${ms}`);
+}
+
 $('#btnStartPlay').on('click', function () {
     clearInterval(intervalID);
     intervalID = setInterval(displayTimer, 10);
 
-    function displayTimer() {
-        milliseconds += 10;
-        if (milliseconds === 1000) {
-            milliseconds = 0;
-            seconds++;
-            if (seconds === 60) {
-                seconds = 0;
-                minutes++;
-            }
-        }
-
-        let m = minutes < 10 ? "0" + minutes : minutes;
-        let s = seconds < 10 ? "0" + seconds : seconds;
-        let ms = milliseconds < 10 ? "0" + milliseconds : String(milliseconds).substring(0, 2);
-
-        time.text(`${m} : ${s} : ${ms}`);
-    }
-
     $('#btnStartPlay').fadeOut(500);
     $('.hs').fadeIn(1000);
+
+    movZomIntervalID = window.setInterval(moveZombies, 750);
 });
 
 /* --------------------------------------------------------------------------------------------------- */
@@ -135,7 +138,6 @@ function destroyingZombies(bullet) {
     }
 }
 
-let movZomIntervalID = window.setInterval(moveZombies, 750);
 var count = 0;
 
 function moveZombies() {
@@ -151,5 +153,43 @@ function moveZombies() {
         if (newTopValue > 679) {
             count++;
         }
+
+        var destroyedZombiesCount = 0;
+
+        if ($('.hs').css('display') === 'block') {
+            for (let i = 0; i < displayedZombies.length; i++) {
+                if ($(displayedZombies[i]).css('display') === "none") {
+                    destroyedZombiesCount++;
+                }
+            }
+        }
+
+        if (destroyedZombiesCount === displayedZombies.length) {
+            $('#rocket').css('display', 'none');
+            clearInterval(intervalID);
+            $('#gameWinModal').modal('show');
+            $('#gameWinModal').show();
+            $('#gameWinModal').modal({backdrop: 'static', keyboard: false});
+        }
     }
 }
+
+$('#btnPlayAgain').on('click', function () {
+    /*$('#gamePlaySection').css('display', 'none');
+    $('#gamePlaySection').fadeIn(1000);*/
+
+    $('#gameWinModal').modal('hide');
+    clearInterval(intervalID);
+    clearInterval(movZomIntervalID);
+    $('.display-zombies').css('top', '0px');
+
+    $('#rocket').css({left: 0, right: 0});
+
+    milliseconds = 0;
+    seconds = 0;
+    minutes = 0;
+
+    $('#btnStartPlay').css('display', 'block');
+    $('#lblTime').text("00 : 00 : 00");
+    $('#gameWinModal').modal({backdrop: 'document', keyboard: true});
+});
