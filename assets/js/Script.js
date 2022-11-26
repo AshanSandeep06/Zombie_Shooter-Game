@@ -85,7 +85,19 @@ function fireBullets(rocketPosition) {
     bullet.attr('class', 'bullet');
     $("#level_1_gamePlayContainer").append(bullet);
 
-    setInterval(positioningBullets, 8, {rocketPosition, bullet});
+    var moveBullet = setInterval(function () {
+        var bulletPosition = parseInt(window.getComputedStyle($(bullet).get(0)).getPropertyValue("bottom"));
+
+        if (bulletPosition > 700) {
+            clearInterval(moveBullet);
+        }
+
+        bullet.css('left', rocketPosition.left + "px");
+        bullet.css('display', 'block');
+        bullet.css('bottom', bulletPosition + 10 + "px");
+
+        destroyingZombies($(bullet).get(0));
+    }, 8);
 }
 
 $(document).on('keyup', function (event) {
@@ -96,16 +108,6 @@ $(document).on('keyup', function (event) {
         }
     }
 });
-
-function positioningBullets(obj) {
-    var bulletPosition = parseInt(window.getComputedStyle($(obj.bullet).get(0)).getPropertyValue("bottom"));
-
-    obj.bullet.css('left', obj['rocketPosition'].left + "px");
-    obj.bullet.css('display', 'block');
-    obj.bullet.css('bottom', bulletPosition + 10 + "px");
-
-    destroyingZombies($(obj.bullet).get(0));
-}
 
 // run the currently selected effect
 /*function runEffect(object) {
