@@ -192,11 +192,11 @@ function moveZombies() {
     }
 }
 
-$('#btnPlayAgain').on('click', function () {
-    $('#gameWinModal').modal('hide');
+function modalNeeds() {
     clearInterval(intervalID);
     clearInterval(movZomIntervalID);
     $('.display-zombies').css('top', '0px');
+    $('.display-zombies').css('display', 'none');
 
     $('#rocket').css({left: "auto"});
 
@@ -206,8 +206,15 @@ $('#btnPlayAgain').on('click', function () {
 
     $('#btnStartPlay').css('display', 'block');
     $('#lblTime').text("00 : 00 : 00");
+    $('#txtScore').val("0");
+}
+
+$('#btnPlayAgain').on('click', function () {
+    $('#gameWinModal').modal('hide');
+    modalNeeds();
 });
 
 $('#gameLostBtnTryAgain').on('click', function () {
-
+    $('#gameLostModal').modal('hide');
+    modalNeeds();
 });
