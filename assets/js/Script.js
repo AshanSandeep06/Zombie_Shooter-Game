@@ -159,6 +159,10 @@ function moveZombies() {
             $('#rocket').css('display', 'none');
             clearInterval(intervalID);
             clearInterval(movZomIntervalID);
+
+            $('#gameLost_play_time').text($('#lblTime').text());
+            $('#gameLost_your_score').text($('#txtScore').val());
+
             $('#gameLostModal').modal('show');
             $('#gameLostModal').show();
         }
@@ -177,6 +181,10 @@ function moveZombies() {
             $('#rocket').css('display', 'none');
             clearInterval(intervalID);
             clearInterval(movZomIntervalID);
+
+            $('#play_time').text($('#lblTime').text());
+            $('#your_score').text($('#txtScore').val());
+
             $('#gameWinModal').modal('show');
             $('#gameWinModal').show();
         }
