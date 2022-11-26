@@ -376,7 +376,7 @@ div {
     animation-timing-function: linear;
 }
 
-@keyframes playButton-animation {
+/*@keyframes playButton-animation {
     0% {
         transform: scale(0.95);
     }
@@ -392,9 +392,9 @@ div {
     animation-duration: 1s;
     animation-direction: alternate;
     animation-timing-function: linear;
-}
+}*/
 
-#victory{
+#victory {
     position: absolute;
     top: 15px;
     right: 180px;
