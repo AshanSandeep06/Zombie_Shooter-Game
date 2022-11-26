@@ -134,7 +134,7 @@ div {
     column-gap: 13px;
 }
 
-#gamePlaySection {
+#level1_section {
     display: flex;
     position: relative;
     width: 100vw;
@@ -143,7 +143,7 @@ div {
     background-color: #062334;
 }
 
-#gamePlaySection > div:nth-child(2) {
+#level1_section > div:nth-child(2) {
     width: 230px;
     position: absolute;
     display: flex;
@@ -157,11 +157,11 @@ div {
     font-size: 28px;
 }
 
-#gamePlaySection > div:nth-child(2) > input {
+#level1_section > div:nth-child(2) > input {
     font-size: 18px;
 }
 
-#gamePlaySection > div:nth-child(3) {
+#level1_section > div:nth-child(3) {
     position: absolute;
     font-family: Ubuntu, sans-serif;
     left: 15px;
@@ -174,12 +174,12 @@ div {
     padding-left: 13px;
 }
 
-#gamePlaySection > div:nth-child(3) > label:first-child {
+#level1_section > div:nth-child(3) > label:first-child {
     color: white;
     font-size: 29px;
 }
 
-#gamePlaySection > div:nth-child(3) > label:nth-child(2) {
+#level1_section > div:nth-child(3) > label:nth-child(2) {
     color: white;
     font-size: 24px;
 }

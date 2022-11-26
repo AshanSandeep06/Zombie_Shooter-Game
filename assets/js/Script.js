@@ -5,7 +5,7 @@ $("#txtScore").val(0);
 let movZomIntervalID = -1;
 
 $(function () {
-    $('#gamePlaySection').css('display', 'none');
+    $('#level1_section').css('display', 'none');
     $('.hs, .bullet').css('display', 'none');
     $('#btnStartPlay').css('display', 'block');
 
@@ -16,7 +16,7 @@ $(function () {
 $('#btnPlay').on('click', function () {
     $('#homePageSection').css('display', 'none');
     $('.bullet').css('display', 'block');
-    $('#gamePlaySection').fadeIn(1000);
+    $('#level1_section').fadeIn(1000);
 });
 
 function displayTimer() {
@@ -175,8 +175,8 @@ function moveZombies() {
 }
 
 $('#btnPlayAgain').on('click', function () {
-    /*$('#gamePlaySection').css('display', 'none');
-    $('#gamePlaySection').fadeIn(1000);*/
+    /*$('#level1_section').css('display', 'none');
+    $('#level1_section').fadeIn(1000);*/
 
     $('#gameWinModal').modal('hide');
     clearInterval(intervalID);
