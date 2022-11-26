@@ -185,7 +185,7 @@ $('#btnPlayAgain').on('click', function () {
     clearInterval(movZomIntervalID);
     $('.display-zombies').css('top', '0px');
 
-    $('#rocket').css({left: 0, right: 0});
+    $('#rocket').css({left: "auto"});
 
     milliseconds = 0;
     seconds = 0;
