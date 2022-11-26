@@ -207,3 +207,7 @@ $('#btnPlayAgain').on('click', function () {
     $('#btnStartPlay').css('display', 'block');
     $('#lblTime').text("00 : 00 : 00");
 });
+
+$('#gameLostBtnTryAgain').on('click', function () {
+
+});
