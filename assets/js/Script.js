@@ -136,7 +136,9 @@ function destroyingZombies(bullet) {
         if (bulletPosition.right <= zombiePosition.right && bulletPosition.left >= zombiePosition.left &&
             bulletPosition.top >= zombiePosition.top && bulletPosition.bottom <= zombiePosition.bottom) {
             $(zombie).css('display', 'none');
-            // runEffect($(zombie));
+
+            // Calculate Score
+            $("#txtScore").val(parseInt($("#txtScore").val()) + 5);
         }
     }
 }
