@@ -157,7 +157,6 @@ function moveZombies() {
 
         if (newTopValue > 679) {
             // count++;
-            /* 2022-11-26 */
             $('#rocket').css('display', 'none');
             clearInterval(intervalID);
             clearInterval(movZomIntervalID);
@@ -194,9 +193,6 @@ function moveZombies() {
 }
 
 $('#btnPlayAgain').on('click', function () {
-    /*$('#level_1_section').css('display', 'none');
-    $('#level_1_section').fadeIn(1000);*/
-
     $('#gameWinModal').modal('hide');
     clearInterval(intervalID);
     clearInterval(movZomIntervalID);
