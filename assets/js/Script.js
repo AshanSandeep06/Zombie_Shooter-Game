@@ -160,8 +160,8 @@ function moveZombies() {
             clearInterval(intervalID);
             clearInterval(movZomIntervalID);
 
-            $('#gameLost_play_time').text($('#lblTime').text());
-            $('#gameLost_your_score').text($('#txtScore').val());
+            $('#gameLost_play_time').text("Time : " + $('#lblTime').text());
+            $('#gameLost_your_score').text("Your Score : " + $('#txtScore').val());
 
             $('#gameLostModal').modal('show');
             $('#gameLostModal').show();
@@ -182,8 +182,8 @@ function moveZombies() {
             clearInterval(intervalID);
             clearInterval(movZomIntervalID);
 
-            $('#play_time').text($('#lblTime').text());
-            $('#your_score').text($('#txtScore').val());
+            $('#play_time').text("Time : " + $('#lblTime').text());
+            $('#your_score').text("Your Score : " + $('#txtScore').val());
 
             $('#gameWinModal').modal('show');
             $('#gameWinModal').show();
