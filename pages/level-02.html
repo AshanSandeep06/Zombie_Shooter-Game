@@ -6,5 +6,144 @@
 </head>
 <body>
 
+<!-- Level 2 -->
+<main class="row justify-content-center align-items-center" id="level_2_section">
+    <section id="level_2_gamePlayContainer" class="border border-1 border-white">
+        <img alt="Background Image" src="assets/img/photo1.jpg">
+
+        <!-- Play Button -->
+        <div id="btnStartPlay-level_02" class="animate__animated animate__flip"></div>
+
+        <!-- Rocket div -->
+        <div id="rocket-level_02" class="hs-level_02">
+            <img src="assets/img/rocket9.png" alt="Rocket_image">
+        </div>
+
+        <!-- Zombies div -->
+        <div class="zombies-level_02 hs-level_02">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies-level_02 hs-level_02">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies-level_02 hs-level_02">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies-level_02 hs-level_02">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies-level_02 hs-level_02">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies-level_02 hs-level_02">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+    </section>
+
+    <!-- Score div -->
+    <div>
+        <label class="form-label" for="txtScore">Score :</label>
+        <input class="form-control" disabled id="txtScore-level_02" type="text">
+    </div>
+
+    <!-- Time And Level div -->
+    <div>
+        <label class="form-label" id="lblTime-level_02">00 : 00 : 00</label>
+        <label class="form-label" id="lblLevel-level_02">Level 2</label>
+    </div>
+
+    <!-- ===================================================================================================== -->
+
+    <!-- Game Win Modal -->
+    <button style="position:absolute; width: 100px; height: 100px;" type="button" class="btn btn-success align-self-end"
+            data-bs-toggle="modal"
+            data-bs-target="#gameWinModal">+ Add Customer
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="gameWinModal-level_02" tabindex="-1"
+         aria-labelledby="exampleModalLabel2"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Game Over</h5>
+                    <div class="progress progressBar">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                             aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%"></div>
+                    </div>
+                </div>
+
+
+                <div class="modal-body">
+                    <h5 class="" id="play_time-level_02">Time : 00:00</h5>
+                    <h5 class="" id="your_score-level_02">Your Score : 0</h5>
+                    <h1 class="victory">Victory</h1>
+                    <img src="assets/img/victory-img_01.png" alt="Victory_image">
+                </div>
+
+
+                <div class="modal-footer row">
+                    <button id="btnPlayAgain-level_02" type="button" class="btn btn-primary col-3">Play Again</button>
+                    <button id="btnNext-level_02" type="button" class="btn btn-success col-2">Next</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===================================================================================================== -->
+
+    <button style="position:absolute; left:0;width: 100px; height: 100px;" type="button"
+            class="btn btn-success align-self-end"
+            data-bs-toggle="modal"
+            data-bs-target="#gameLostModal">+ Add Customer
+    </button>
+
+    <!-- Game Lost Modal -->
+    <div class="modal fade" id="gameLostModal-level_02" tabindex="-1"
+         aria-labelledby="exampleModalLabel2"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Game Over</h5>
+                    <div class="progress progressBar">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                             aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%"></div>
+                    </div>
+                </div>
+
+
+                <div class="modal-body">
+                    <h5 class="" id="gameLost_play_time-level_02">Time : 00:00</h5>
+                    <h5 class="" id="gameLost_your_score-level_02">Your Score : 0</h5>
+                    <img src="assets/img/defeat-image.png" alt="Defeat_image">
+                </div>
+
+
+                <div class="modal-footer row">
+                    <button id="gameLostBtnTryAgain-level_02" type="button" class="btn btn-danger col-3">Try Again
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
 </body>
 </html>
