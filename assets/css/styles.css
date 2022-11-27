@@ -134,6 +134,8 @@ div {
     column-gap: 13px;
 }
 
+/* ------------------------------------------ Level 01 ------------------------------------------ */
+
 #level_1_section {
     display: flex;
     position: relative;
@@ -455,3 +457,5 @@ div {
 #gameLostBtnTryAgain:hover {
     background-color: #bb2d3b;
 }
+
+/* ------------------------------------------ Level 02 ------------------------------------------ */
