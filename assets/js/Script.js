@@ -1,3 +1,5 @@
+/* ---------------------------------------------- Level 01 -------------------------------------------------------- */
+
 let [milliseconds, seconds, minutes] = [0, 0, 0];
 let time = $('#lblTime');
 let intervalID = -1;
@@ -218,3 +220,5 @@ $('#gameLostBtnTryAgain').on('click', function () {
     $('#gameLostModal').modal('hide');
     modalNeeds();
 });
+
+/* ---------------------------------------------- Level 02 -------------------------------------------------------- */

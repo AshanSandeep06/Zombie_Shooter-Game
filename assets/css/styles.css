@@ -390,7 +390,7 @@ div {
     animation-timing-function: linear;
 }*/
 
-#victory {
+.victory {
     position: absolute;
     top: 41px;
     left: 199px;
@@ -401,7 +401,7 @@ div {
     text-shadow: 0 6px 3px rgba(0, 0, 0, 0.25);
 }
 
-#defeat {
+.defeat {
     position: absolute;
     top: 41px;
     left: 195px;
