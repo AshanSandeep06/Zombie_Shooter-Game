@@ -127,13 +127,11 @@ $(document).on('keyup', function (event) {
     var selectedEffect = 'explode';
     // Run the effect
     $(object).hide( selectedEffect, options, 1000, this.callback);
-
     this.callback = function() {
         setTimeout(function() {
             $(object).removeAttr( "style" ).hide();
         }, 1000 );
     }
-
 }*/
 
 function destroyingZombies(bullet) {
