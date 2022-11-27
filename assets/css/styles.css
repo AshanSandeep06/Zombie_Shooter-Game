@@ -210,11 +210,11 @@ div {
     object-fit: cover;
 }
 
-.zombies {
+.zombies, .zombies-level_02 {
     position: absolute;
 }
 
-.zombies > img {
+.zombies > img, .zombies-level_02 > img {
     /* width: 129px;
      height: 200px;*/
 
