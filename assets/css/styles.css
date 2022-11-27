@@ -395,9 +395,10 @@ div {
     top: 41px;
     left: 195px;
     right: 180px;
-    color: crimson;
+    color: #ebdfe2;
     font-weight: 700;
     font-size: 43px;
+    text-shadow: 0 6px 3px rgba(0, 0, 0, 0.25);
 }
 
 #defeat {
@@ -434,23 +435,23 @@ div {
     top: 16px;
 }
 
-#btnPlayAgain, #btnNext, #gameLostBtnTryAgain{
+#btnPlayAgain, #btnNext, #gameLostBtnTryAgain {
     font-size: 17px;
 }
 
-#btnNext{
+#btnNext {
     background-color: #008D30;
     width: 95px;
 }
 
-#btnNext:hover{
+#btnNext:hover {
     background-color: #0f864f;
 }
 
-#gameLostBtnTryAgain{
+#gameLostBtnTryAgain {
     background-color: #cf2938;
 }
 
-#gameLostBtnTryAgain:hover{
+#gameLostBtnTryAgain:hover {
     background-color: #bb2d3b;
 }
