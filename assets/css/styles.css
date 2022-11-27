@@ -393,7 +393,7 @@ div {
 #victory {
     position: absolute;
     top: 41px;
-    left: 195px;
+    left: 199px;
     right: 180px;
     color: #ebdfe2;
     font-weight: 700;
@@ -417,7 +417,7 @@ div {
     background-position: center;
     background-size: cover;
     position: absolute;
-    right: 12px;
+    right: 6px;
     top: 13px;
 }
 
