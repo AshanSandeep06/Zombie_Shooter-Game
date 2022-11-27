@@ -302,7 +302,7 @@ div {
     overflow: hidden;
 }
 
-#gameWinModal {
+#gameWinModal, #gameLostModal {
     font-family: Ubuntu, sans-serif;
 }
 
@@ -410,7 +410,17 @@ div {
     font-size: 43px;
 }
 
-.modal-body > img{
+#defeat{
+    position: absolute;
+    top: 41px;
+    left: 195px;
+    right: 180px;
+    color: crimson;
+    font-weight: 700;
+    font-size: 43px;
+}
+
+.modal-body > img {
     width: 150px;
     height: 150px;
     /* object-fit: cover; */
@@ -421,7 +431,7 @@ div {
     top: 13px;
 }
 
-#progressBar{
+#progressBar {
     width: 92%;
     position: relative;
 }
