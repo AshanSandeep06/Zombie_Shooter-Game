@@ -433,3 +433,7 @@ div {
     right: 76px;
     top: 16px;
 }
+
+#btnPlayAgain, #btnNext, #gameLostBtnTryAgain{
+    font-size: 17px;
+}
