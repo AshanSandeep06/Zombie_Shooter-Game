@@ -206,14 +206,6 @@ div {
 }
 
 #rocket > img {
-    /*width: 130px;
-    height: 138px;
-    object-fit: cover;*/
-
-    /*width: 136px;
-    height: 145px;
-    object-fit: cover;*/
-
     width: 75px;
     height: 136px;
     object-fit: cover;
@@ -309,7 +301,6 @@ div {
 .modal-header {
     background: linear-gradient(90deg, rgba(15, 12, 93, 1) 0%, rgba(24, 24, 140, 1) 35%, rgba(9, 205, 247, 1) 100%);
     color: white;
-    /* height: 62px; */
     height: 76px;
     justify-content: center !important;
     border: none;
@@ -328,7 +319,6 @@ div {
 }
 
 .modal-title {
-    /*position: absolute;*/
     font-size: 28px;
 }
 
@@ -410,7 +400,7 @@ div {
     font-size: 43px;
 }
 
-#defeat{
+#defeat {
     position: absolute;
     top: 41px;
     left: 195px;
@@ -423,7 +413,6 @@ div {
 .modal-body > img {
     width: 150px;
     height: 150px;
-    /* object-fit: cover; */
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -440,8 +429,6 @@ div {
     width: 230px;
     height: 128px;
     object-fit: cover;
-    /* background-position: center; */
-    /* background-size: cover; */
     position: absolute;
     right: 89px;
     top: 13px;
