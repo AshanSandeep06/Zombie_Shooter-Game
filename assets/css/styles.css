@@ -417,8 +417,8 @@ div {
     background-position: center;
     background-size: cover;
     position: absolute;
-    right: 4px;
-    top: 7px;
+    right: 12px;
+    top: 13px;
 }
 
 #progressBar{
