@@ -1,10 +1,18 @@
 /* ---------------------------------------------- Levels -------------------------------------------------------- */
 
 let [milliseconds, seconds, minutes] = [0, 0, 0];
+
 let time = $('#lblTime');
+let time_level_02 = $('#lblTime-level_02');
+
 let intervalID = -1;
+let intervalID_level_02 = -1;
+
 $("#txtScore").val(0);
+$("#txtScore-level_02").val(0);
+
 let movZomIntervalID = -1;
+let movZomIntervalID_level_02 = -1;
 
 $(function () {
     $('#level_1_section').css('display', 'none');
