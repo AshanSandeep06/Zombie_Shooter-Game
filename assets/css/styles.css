@@ -431,7 +431,7 @@ div {
     top: 13px;
 }
 
-#progressBar {
+.progressBar {
     width: 92%;
     position: relative;
 }
