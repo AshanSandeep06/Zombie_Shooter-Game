@@ -435,3 +435,14 @@ div {
     width: 92%;
     position: relative;
 }
+
+#gameLostModal .modal-body > img {
+    width: 230px;
+    height: 128px;
+    object-fit: cover;
+    /* background-position: center; */
+    /* background-size: cover; */
+    position: absolute;
+    right: 89px;
+    top: 13px;
+}
