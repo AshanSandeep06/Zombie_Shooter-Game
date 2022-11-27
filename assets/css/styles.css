@@ -437,3 +437,20 @@ div {
 #btnPlayAgain, #btnNext, #gameLostBtnTryAgain{
     font-size: 17px;
 }
+
+#btnNext{
+    background-color: #008D30;
+    width: 95px;
+}
+
+#btnNext:hover{
+    background-color: #0f864f;
+}
+
+#gameLostBtnTryAgain{
+    background-color: #cf2938;
+}
+
+#gameLostBtnTryAgain:hover{
+    background-color: #bb2d3b;
+}
