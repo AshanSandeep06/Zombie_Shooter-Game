@@ -63,7 +63,7 @@ $('#btnStartPlay').on('click', function () {
         $('#btnStartPlay').fadeOut(500);
         $('.hs').fadeIn(1000);
 
-        movZomIntervalID = window.setInterval(moveZombies, 850);
+        movZomIntervalID = window.setInterval(moveZombies, 900);
     }
 });
 
