@@ -11,6 +11,7 @@ let movZomIntervalID = -1;
 
 $(function () {
     $('#level_1_section').css('display', 'none');
+    $('#level_2_section').css('display', 'none');
     $('.hs, .bullet').css('display', 'none');
     $('#btnStartPlay').css('display', 'block');
 
