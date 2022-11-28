@@ -132,7 +132,7 @@ function moveZombies() {
     var displayedZombies = $('.display-zombies');
 
     for (let zombie of displayedZombies) {
-        var randomValue = Math.floor((Math.random() * 50) + 1);
+        var randomValue = Math.floor((Math.random() * 50) + 5);
 
         var existTopValue = parseInt($(zombie).css('top'));
         var newTopValue = existTopValue + randomValue;
