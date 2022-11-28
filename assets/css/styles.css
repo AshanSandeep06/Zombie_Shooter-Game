@@ -198,7 +198,7 @@ div {
     cursor: pointer;
 }
 
-#rocket, #rocket-level_02, center #rocket-level_03 {
+#rocket, #rocket-level_02, #rocket-level_03 {
     position: absolute;
     bottom: -7px;
     width: 75px;
