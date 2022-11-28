@@ -6,18 +6,6 @@ let intervalID_level_02 = -1;
 $("#txtScore-level_02").val(0);
 let movZomIntervalID_level_02 = -1;
 
-/*$(function () {
-    $('#homePageSection').css('display', 'none');
-    $('#level_1_section').css('display', 'none');
-    $('.hs, .bullet').css('display', 'none');
-    $('#btnStartPlay').css('display', 'block');
-
-    /!* For GameWin modal (This modal is not closed when click outside of this modal) *!/
-    $('#gameWinModal').modal({backdrop: 'static', keyboard: false});
-    $('#gameLostModal').modal({backdrop: 'static', keyboard: false});
-    $('#rocket-level_02').css({left: "auto"});
-});*/
-
 function displayTimer_level_02() {
     if ($('#level_2_section').css('display') !== 'none' && $('#level_1_section').css('display') === 'none') {
         milliseconds_level_02 += 10;
@@ -46,7 +34,7 @@ $('#btnStartPlay-level_02').on('click', function () {
         $('#btnStartPlay-level_02').fadeOut(500);
         $('.hs-level_02').fadeIn(1000);
 
-        // movZomIntervalID_level_02 = window.setInterval(moveZombies_level_02, 850);
+        movZomIntervalID_level_02 = window.setInterval(moveZombies_level_02, 850);
     }
 });
 
