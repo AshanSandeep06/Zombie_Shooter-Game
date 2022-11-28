@@ -178,17 +178,19 @@ function moveZombies() {
             var newTopValue = existTopValue + randomValue;
             $(zombie).css('top', newTopValue + "px");
 
-            if (newTopValue > 679) {
-                // count++;
-                $('#rocket').css('display', 'none');
-                clearInterval(intervalID);
-                clearInterval(movZomIntervalID);
+            if($(zombie).css('display') !== 'none'){
+                if (newTopValue > 675) {
+                    // count++;
+                    $('#rocket').css('display', 'none');
+                    clearInterval(intervalID);
+                    clearInterval(movZomIntervalID);
 
-                $('#gameLost_play_time').text("Time : " + $('#lblTime').text());
-                $('#gameLost_your_score').text("Your Score : " + $('#txtScore').val());
+                    $('#gameLost_play_time').text("Time : " + $('#lblTime').text());
+                    $('#gameLost_your_score').text("Your Score : " + $('#txtScore').val());
 
-                $('#gameLostModal').modal('show');
-                $('#gameLostModal').show();
+                    $('#gameLostModal').modal('show');
+                    $('#gameLostModal').show();
+                }
             }
 
             var destroyedZombiesCount = 0;

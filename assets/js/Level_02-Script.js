@@ -151,17 +151,19 @@ function moveZombies_level_02() {
             var newTopValue_level_02 = existTopValue_level_02 + randomValue_level_02;
             $(zombie_level_02).css('top', newTopValue_level_02 + "px");
 
-            if (newTopValue_level_02 > 679) {
-                // count++;
-                $('#rocket-level_02').css('display', 'none');
-                clearInterval(intervalID_level_02);
-                clearInterval(movZomIntervalID_level_02);
+            if($(zombie_level_02).css('display') !== 'none'){
+                if (newTopValue_level_02 > 675) {
+                    // count++;
+                    $('#rocket-level_02').css('display', 'none');
+                    clearInterval(intervalID_level_02);
+                    clearInterval(movZomIntervalID_level_02);
 
-                $('#gameLost_play_time-level_02').text("Time : " + $('#lblTime-level_02').text());
-                $('#gameLost_your_score-level_02').text("Your Score : " + $('#txtScore-level_02').val());
+                    $('#gameLost_play_time-level_02').text("Time : " + $('#lblTime-level_02').text());
+                    $('#gameLost_your_score-level_02').text("Your Score : " + $('#txtScore-level_02').val());
 
-                $('#gameLostModal-level_02').modal('show');
-                $('#gameLostModal-level_02').show();
+                    $('#gameLostModal-level_02').modal('show');
+                    $('#gameLostModal-level_02').show();
+                }
             }
 
             var destroyedZombiesCount_level_02 = 0;
