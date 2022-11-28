@@ -211,3 +211,13 @@ $('#gameLostBtnTryAgain-level_03').on('click', function () {
         modalNeeds_level_03();
     }
 });
+
+$('#btnNext-level_03').on('click', function () {
+    if ($('#level_3_section').css('display') !== 'none' && $('#level_1_section').css('display') === 'none' && $('#level_2_section').css('display') === 'none') {
+        $('#level_3_section').css('display', 'none');
+        $('#level_4_section').fadeIn(1000);
+
+        $('#gameWinModal-level_03').modal('hide');
+        $('#gameLostModal-level_03').modal('hide');
+    }
+});
