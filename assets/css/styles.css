@@ -556,6 +556,93 @@ a {
     left: 60vw;
 }
 
+#level_3_gamePlayContainer > div:nth-child(4) {
+    left: 1vw;
+}
+
+#level_3_gamePlayContainer > div:nth-child(5) {
+    top: 19px;
+    left: 9vw;
+}
+
+#level_3_gamePlayContainer > div:nth-child(6) {
+    top: 88px;
+    left: 16vw;
+}
+
+#level_3_gamePlayContainer > div:nth-child(7) {
+    top: 19px;
+    left: 23vw;
+}
+
+#level_3_gamePlayContainer > div:nth-child(8) {
+    top: 37px;
+    left: 32vw;
+}
+
+#level_3_gamePlayContainer > div:nth-child(9) {
+    left: 39vw;
+}
+
+#level_3_gamePlayContainer > div:nth-child(10) {
+    top: 75px;
+    left: 47vw;
+}
+
+#level_3_gamePlayContainer > div:nth-child(11) {
+    left: 54vw;
+}
+
+#level_3_gamePlayContainer > div:nth-child(12) {
+    top: 50px;
+    left: 62vw;
+}
+
+#level_3_gamePlayContainer > div:nth-child(13) {
+    left: 14vw;
+    top: -61px;
+}
+
+#level_3_gamePlayContainer > div:nth-child(14) {
+    left: 25vw;
+    top: -152px;
+}
+
+#level_3_gamePlayContainer > div:nth-child(15) {
+    left: 8vw;
+    top: -115px;
+}
+
+#level_3_gamePlayContainer > div:nth-child(16) {
+    left: 29vw;
+    top: -88px;
+}
+
+#level_3_gamePlayContainer > div:nth-child(17) {
+    left: 37vw;
+    top: -141px;
+}
+
+#level_3_gamePlayContainer > div:nth-child(18) {
+    left: 26vw;
+    top: 155px;
+}
+
+#level_3_gamePlayContainer > div:nth-child(19) {
+    left: 5vw;
+    top: -118px;
+}
+
+#level_3_gamePlayContainer > div:nth-child(20) {
+    left: 46vw;
+    top: -129px;
+}
+
+#level_3_gamePlayContainer > div:nth-child(21) {
+    left: 58vw;
+    top: -139px;
+}
+
 #score-label-level_03 {
     margin-left: 41px;
 }
@@ -572,5 +659,10 @@ a {
 
 #btnStartPlay-level_03 {
     left: auto;
+}
+
+#level_3_gamePlayContainer > div:nth-child(12) > img {
+    width: 110px;
+    height: 133px;
 }
 
