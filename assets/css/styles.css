@@ -193,7 +193,8 @@ div {
     width: 190px;
     height: 75px;
     bottom: 121px;
-    left: 425px;
+    /*left: 425px;*/
+    left: 418px;
     cursor: pointer;
 }
 
@@ -286,8 +287,10 @@ div {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 1033px;
-    height: 95%;
+    /*width: 1033px;
+    height: 95%;*/
+    width: 999px;
+    height: 93%;
     padding: 0;
     border-radius: 36px;
     overflow: hidden;
