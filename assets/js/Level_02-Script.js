@@ -46,7 +46,7 @@ $('#btnStartPlay-level_02').on('click', function () {
         $('#btnStartPlay-level_02').fadeOut(500);
         $('.hs-level_02').fadeIn(1000);
 
-        movZomIntervalID_level_02 = window.setInterval(moveZombies_level_02, 750);
+        movZomIntervalID_level_02 = window.setInterval(moveZombies_level_02, 850);
     }
 });
 
