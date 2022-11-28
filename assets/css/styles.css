@@ -257,6 +257,23 @@ div {
     left: 57vw;
 }
 
+#level_3_gamePlayContainer > div:nth-child(5) > img {
+    object-fit: cover;
+    width: 68px;
+    height: 145px;
+}
+
+#level_3_gamePlayContainer > div:nth-child(8) > img {
+    object-fit: cover;
+    width: 68px;
+    height: 145px;
+}
+
+#level_3_gamePlayContainer > div:nth-child(7) > img, #level_3_gamePlayContainer > div:nth-child(10) > img {
+    width: 110px;
+    height: 133px;
+}
+
 .hiddenZombies {
     display: none;
 }
@@ -497,44 +514,44 @@ a {
     height: 94%;
 }
 
-#level_2_gamePlayContainer > div:nth-child(4) {
+#level_2_gamePlayContainer > div:nth-child(4), #level_3_gamePlayContainer > div:nth-child(4) {
     left: 1vw;
 }
 
-#level_2_gamePlayContainer > div:nth-child(5) {
+#level_2_gamePlayContainer > div:nth-child(5), #level_3_gamePlayContainer > div:nth-child(5) {
     top: 19px;
     left: 9vw;
 }
 
-#level_2_gamePlayContainer > div:nth-child(6) {
+#level_2_gamePlayContainer > div:nth-child(6), #level_3_gamePlayContainer > div:nth-child(6) {
     top: 88px;
     left: 16vw;
 }
 
-#level_2_gamePlayContainer > div:nth-child(7) {
+#level_2_gamePlayContainer > div:nth-child(7), #level_3_gamePlayContainer > div:nth-child(7) {
     top: 19px;
     left: 23vw;
 }
 
-#level_2_gamePlayContainer > div:nth-child(8) {
+#level_2_gamePlayContainer > div:nth-child(8), #level_3_gamePlayContainer > div:nth-child(8) {
     top: 37px;
     left: 32vw;
 }
 
-#level_2_gamePlayContainer > div:nth-child(9) {
+#level_2_gamePlayContainer > div:nth-child(9), #level_3_gamePlayContainer > div:nth-child(9) {
     left: 38vw;
 }
 
-#level_2_gamePlayContainer > div:nth-child(10) {
+#level_2_gamePlayContainer > div:nth-child(10), #level_3_gamePlayContainer > div:nth-child(10) {
     top: 75px;
     left: 45vw;
 }
 
-#level_2_gamePlayContainer > div:nth-child(11) {
+#level_2_gamePlayContainer > div:nth-child(11), #level_3_gamePlayContainer > div:nth-child(11) {
     left: 52vw;
 }
 
-#level_2_gamePlayContainer > div:nth-child(12) {
+#level_2_gamePlayContainer > div:nth-child(12), #level_3_gamePlayContainer > div:nth-child(12) {
     top: 50px;
     left: 60vw;
 }
@@ -553,7 +570,7 @@ a {
     height: 95%;
 }
 
-#btnStartPlay-level_03{
+#btnStartPlay-level_03 {
     left: auto;
 }
 
