@@ -72,7 +72,7 @@ $(document).on('keydown', function (event) {
 
     // To Move right, the Rocket
     // 39 ---> ArrowRight
-    if (event.keyCode === 39 && rocketPosition.left < 956) {
+    if (event.keyCode === 39 && rocketPosition.left < 926) {
         $("#rocket").css('left', rocketPosition.left + 15 + 'px');
     }
 
