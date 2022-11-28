@@ -53,7 +53,7 @@ $(document).on('keydown', function (event) {
 
         // To Move right, the Rocket
         // 39 ---> ArrowRight
-        if (event.keyCode === 39 && rocketPosition_level_03.left < 956) {
+        if (event.keyCode === 39 && rocketPosition_level_03.left < 1051) {
             $("#rocket-level_03").css('left', rocketPosition_level_03.left + 15 + 'px');
         }
 
