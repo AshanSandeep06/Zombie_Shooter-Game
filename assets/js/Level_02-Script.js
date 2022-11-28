@@ -15,6 +15,7 @@ let movZomIntervalID_level_02 = -1;
     /!* For GameWin modal (This modal is not closed when click outside of this modal) *!/
     $('#gameWinModal').modal({backdrop: 'static', keyboard: false});
     $('#gameLostModal').modal({backdrop: 'static', keyboard: false});
+    $('#rocket-level_02').css({left: "auto"});
 });*/
 
 function displayTimer_level_02() {

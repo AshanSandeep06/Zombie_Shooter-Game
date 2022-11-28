@@ -22,8 +22,6 @@ $(function () {
 
     $('#gameLostModal').modal({backdrop: 'static', keyboard: false});
     $('#gameLostModal-level_02').modal({backdrop: 'static', keyboard: false});
-
-    $('#rocket-level_02').css({left: "auto"});
 });
 
 $('#btnPlay').on('click', function () {
