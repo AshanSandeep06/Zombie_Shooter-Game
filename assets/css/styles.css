@@ -223,8 +223,12 @@ div {
     height: 154px;
     object-fit: cover;*/
 
-    width: 110px;
-    height: 120px;
+    /*width: 110px;*/
+    /*height: 120px;*/
+
+    width: 103px;
+    height: 116px;
+
     background-position: center;
     background-size: cover;
 }
@@ -466,14 +470,61 @@ div {
     background-color: #bb2d3b;
 }
 
-#btnNext{
+#btnNext {
     position: relative;
 }
 
-a{
+a {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+}
+
+#level_2_gamePlayContainer {
+    width: 1043px;
+    height: 94%;
+}
+
+#level_2_gamePlayContainer > div:nth-child(4) {
+    left: 1vw;
+}
+
+#level_2_gamePlayContainer > div:nth-child(5) {
+    top: 19px;
+    left: 9vw;
+}
+
+#level_2_gamePlayContainer > div:nth-child(6) {
+    top: 88px;
+    left: 16vw;
+}
+
+#level_2_gamePlayContainer > div:nth-child(7) {
+    top: 19px;
+    left: 23vw;
+}
+
+#level_2_gamePlayContainer > div:nth-child(8) {
+    top: 37px;
+    left: 32vw;
+}
+
+#level_2_gamePlayContainer > div:nth-child(9) {
+    left: 38vw;
+}
+
+#level_2_gamePlayContainer > div:nth-child(10) {
+    top: 75px;
+    left: 45vw;
+}
+
+#level_2_gamePlayContainer > div:nth-child(11) {
+    left: 52vw;
+}
+
+#level_2_gamePlayContainer > div:nth-child(12) {
+    top: 50px;
+    left: 60vw;
 }

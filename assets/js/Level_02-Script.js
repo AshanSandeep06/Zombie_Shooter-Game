@@ -46,7 +46,7 @@ $('#btnStartPlay-level_02').on('click', function () {
         $('#btnStartPlay-level_02').fadeOut(500);
         $('.hs-level_02').fadeIn(1000);
 
-        movZomIntervalID_level_02 = window.setInterval(moveZombies_level_02, 600);
+        movZomIntervalID_level_02 = window.setInterval(moveZombies_level_02, 750);
     }
 });
 
@@ -132,7 +132,7 @@ function destroyingZombies_level_02(bullet_level_02) {
                 $(zombie_level_02).css('display', 'none');
 
                 // Calculate Score
-                $("#txtScore-level_02").val(parseInt($("#txtScore-level_02").val()) + 5);
+                $("#txtScore-level_02").val(parseInt($("#txtScore-level_02").val()) + 20);
             }
         }
     }

@@ -159,7 +159,7 @@ function destroyingZombies(bullet) {
                 $(zombie).css('display', 'none');
 
                 // Calculate Score
-                $("#txtScore").val(parseInt($("#txtScore").val()) + 5);
+                $("#txtScore").val(parseInt($("#txtScore").val()) + 20);
             }
         }
     }
