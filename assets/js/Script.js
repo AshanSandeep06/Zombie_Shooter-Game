@@ -178,7 +178,7 @@ function moveZombies() {
             var newTopValue = existTopValue + randomValue;
             $(zombie).css('top', newTopValue + "px");
 
-            if($(zombie).css('display') !== 'none'){
+            if ($(zombie).css('display') !== 'none') {
                 if (newTopValue > 675) {
                     // count++;
                     $('#rocket').css('display', 'none');

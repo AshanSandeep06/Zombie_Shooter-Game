@@ -151,7 +151,7 @@ function moveZombies_level_02() {
             var newTopValue_level_02 = existTopValue_level_02 + randomValue_level_02;
             $(zombie_level_02).css('top', newTopValue_level_02 + "px");
 
-            if($(zombie_level_02).css('display') !== 'none'){
+            if ($(zombie_level_02).css('display') !== 'none') {
                 if (newTopValue_level_02 > 675) {
                     // count++;
                     $('#rocket-level_02').css('display', 'none');
