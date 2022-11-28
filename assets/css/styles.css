@@ -151,7 +151,7 @@ div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     color: white;
     font-family: Ubuntu, sans-serif;
     right: 5px;
@@ -538,3 +538,17 @@ a {
     top: 50px;
     left: 60vw;
 }
+
+#score-label-level_03 {
+    margin-left: 41px;
+}
+
+#txtScore-level_03 {
+    align-self: end;
+    width: 78%;
+}
+
+#level_3_gamePlayContainer {
+    width: 1133px;
+}
+
