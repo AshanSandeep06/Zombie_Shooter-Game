@@ -133,7 +133,7 @@ function moveZombies_level_02() {
     var displayedZombies_level_02 = $('.display-zombies-level_02');
 
     for (let zombie_level_02 of displayedZombies_level_02) {
-        var randomValue_level_02 = Math.floor((Math.random() * 50) + 5);
+        var randomValue_level_02 = Math.floor((Math.random() * 50) + 1);
 
         var existTopValue_level_02 = parseInt($(zombie_level_02).css('top'));
         var newTopValue_level_02 = existTopValue_level_02 + randomValue_level_02;
