@@ -1,4 +1,4 @@
-/* ---------------------------------------------- Levels -------------------------------------------------------- */
+/* ---------------------------------------------- Level 01 -------------------------------------------------------- */
 
 let [milliseconds, seconds, minutes] = [0, 0, 0];
 
@@ -74,11 +74,13 @@ $(document).on('keydown', function (event) {
     // To Fire bullets from the Rocket
     // 38 ---> ArrowUp && 32 ---> Space
     if ($('#btnStartPlay').css('display') === "none") {
-        if (event.keyCode === 38 || event.keyCode === 32) {
-            if (event.keyCode === 38) {
-                fireBullets(rocketPosition);
-            } else {
-                fireBullets(rocketPosition);
+        if ($('.hs').css('display') !== 'none') {
+            if (event.keyCode === 38 || event.keyCode === 32) {
+                if (event.keyCode === 38) {
+                    fireBullets(rocketPosition);
+                } else {
+                    fireBullets(rocketPosition);
+                }
             }
         }
     }
