@@ -1,77 +1,77 @@
 /* ---------------------------------------------- Level 02 -------------------------------------------------------- */
 
-let [milliseconds, seconds, minutes] = [0, 0, 0];
-let time = $('#lblTime');
-let intervalID = -1;
-$("#txtScore").val(0);
-let movZomIntervalID = -1;
+let [milliseconds_level_02, seconds_level_02, minutes_level_02] = [0, 0, 0];
+let time_level_02 = $('#lblTime-level_02');
+let intervalID_level_02 = -1;
+$("#txtScore-level_02").val(0);
+let movZomIntervalID_level_02 = -1;
 
-$(function () {
+/*$(function () {
     $('#homePageSection').css('display', 'none');
     $('#level_1_section').css('display', 'none');
     $('.hs, .bullet').css('display', 'none');
     $('#btnStartPlay').css('display', 'block');
 
-    /* For GameWin modal (This modal is not closed when click outside of this modal) */
+    /!* For GameWin modal (This modal is not closed when click outside of this modal) *!/
     $('#gameWinModal').modal({backdrop: 'static', keyboard: false});
     $('#gameLostModal').modal({backdrop: 'static', keyboard: false});
-});
+});*/
 
-function displayTimer() {
-    milliseconds += 10;
-    if (milliseconds === 1000) {
-        milliseconds = 0;
-        seconds++;
-        if (seconds === 60) {
-            seconds = 0;
-            minutes++;
+function displayTimer_level_02() {
+    milliseconds_level_02 += 10;
+    if (milliseconds_level_02 === 1000) {
+        milliseconds_level_02 = 0;
+        seconds_level_02++;
+        if (seconds_level_02 === 60) {
+            seconds_level_02 = 0;
+            minutes_level_02++;
         }
     }
 
-    let m = minutes < 10 ? "0" + minutes : minutes;
-    let s = seconds < 10 ? "0" + seconds : seconds;
-    let ms = milliseconds < 10 ? "0" + milliseconds : String(milliseconds).substring(0, 2);
+    let m_level_02 = minutes_level_02 < 10 ? "0" + minutes_level_02 : minutes_level_02;
+    let s_level_02 = seconds_level_02 < 10 ? "0" + seconds_level_02 : seconds_level_02;
+    let ms_level_02 = milliseconds_level_02 < 10 ? "0" + milliseconds_level_02 : String(milliseconds_level_02).substring(0, 2);
 
-    time.text(`${m} : ${s} : ${ms}`);
+    time_level_02.text(`${m_level_02} : ${s_level_02} : ${ms_level_02}`);
 }
 
-$('#btnStartPlay').on('click', function () {
-    clearInterval(intervalID);
-    intervalID = setInterval(displayTimer, 10);
+$('#btnStartPlay-level_02').on('click', function () {
+    clearInterval(intervalID_level_02);
+    intervalID_level_02 = setInterval(displayTimer_level_02, 10);
 
-    $('#btnStartPlay').fadeOut(500);
-    $('.hs').fadeIn(1000);
+    $('#btnStartPlay-level_02').fadeOut(500);
+    $('.hs-level_02').fadeIn(1000);
 
-    movZomIntervalID = window.setInterval(moveZombies, 750);
+    movZomIntervalID_level_02 = window.setInterval(moveZombies_level_02, 750);
 });
 
 /* --------------------------------------------------------------------------------------------------- */
 
 /* To Move the rocket to left or right and sending bullets */
 $(document).on('keydown', function (event) {
-    var rocketPosition = $("#rocket").position();
+    var rocketPosition_level_02 = $("#rocket-level_02").position();
 
     // To Move left, the Rocket
     // 37 ---> ArrowLeft
-    if (event.keyCode === 37 && rocketPosition.left > 0) {
-        $("#rocket").css('left', rocketPosition.left - 15 + 'px');
+    if (event.keyCode === 37 && rocketPosition_level_02.left > 0) {
+        $("#rocket-level_02").css('left', rocketPosition_level_02.left - 15 + 'px');
     }
 
     // To Move right, the Rocket
     // 39 ---> ArrowRight
-    if (event.keyCode === 39 && rocketPosition.left < 956) {
-        $("#rocket").css('left', rocketPosition.left + 15 + 'px');
+    if (event.keyCode === 39 && rocketPosition_level_02.left < 956) {
+        $("#rocket-level_02").css('left', rocketPosition_level_02.left + 15 + 'px');
     }
 
     // To Fire bullets from the Rocket
     // 38 ---> ArrowUp && 32 ---> Space
-    if ($('#btnStartPlay').css('display') === "none") {
-        if ($('.hs').css('display') !== 'none') {
+    if ($('#btnStartPlay-level_02').css('display') === "none") {
+        if ($('.hs-level_02').css('display') !== 'none') {
             if (event.keyCode === 38 || event.keyCode === 32) {
                 if (event.keyCode === 38) {
-                    fireBullets(rocketPosition);
+                    fireBullets_level_02(rocketPosition_level_02);
                 } else {
-                    fireBullets(rocketPosition);
+                    fireBullets_level_02(rocketPosition_level_02);
                 }
             }
         }
@@ -79,125 +79,125 @@ $(document).on('keydown', function (event) {
 
 });
 
-function fireBullets(rocketPosition) {
-    var bullet = $('<div>');
-    bullet.css('display', 'none');
-    bullet.attr('class', 'bullet');
-    $("#level_2_gamePlayContainer").append(bullet);
+function fireBullets_level_02(rocketPosition_level_02) {
+    var bullet_level_02 = $('<div>');
+    bullet_level_02.css('display', 'none');
+    bullet_level_02.attr('class', 'bullet');
+    $("#level_2_gamePlayContainer").append(bullet_level_02);
 
-    var moveBullet = setInterval(function () {
-        var bulletPosition = parseInt(window.getComputedStyle($(bullet).get(0)).getPropertyValue("bottom"));
+    var moveBullet_level_02 = setInterval(function () {
+        var bulletPosition_level_02 = parseInt(window.getComputedStyle($(bullet_level_02).get(0)).getPropertyValue("bottom"));
 
-        if (bulletPosition > 700) {
-            clearInterval(moveBullet);
+        if (bulletPosition_level_02 > 700) {
+            clearInterval(moveBullet_level_02);
         }
 
-        bullet.css('left', rocketPosition.left + "px");
-        bullet.css('display', 'block');
-        bullet.css('bottom', bulletPosition + 10 + "px");
+        bullet_level_02.css('left', rocketPosition_level_02.left + "px");
+        bullet_level_02.css('display', 'block');
+        bullet_level_02.css('bottom', bulletPosition_level_02 + 10 + "px");
 
-        destroyingZombies($(bullet).get(0));
+        destroyingZombies_level_02($(bullet_level_02).get(0));
     }, 8);
 }
 
 $(document).on('keyup', function (event) {
-    if ($('.hs').css('display') === 'block') {
+    if ($('.hs-level_02').css('display') === 'block') {
         if (event.keyCode === 38 || event.keyCode === 32) {
-            var shootSound = new Audio('../assets/audio/ShootSound.mp3');
-            shootSound.play();
+            var shootSound_level_02 = new Audio('assets/audio/ShootSound.mp3');
+            shootSound_level_02.play();
         }
     }
 });
 
-function destroyingZombies(bullet) {
-    var displayedZombies = $('.display-zombies');
+function destroyingZombies_level_02(bullet_level_02) {
+    var displayedZombies_level_02 = $('.display-zombies-level_02');
 
-    for (let zombie of displayedZombies) {
-        var bulletPosition = bullet.getBoundingClientRect();
-        var zombiePosition = $(zombie).get(0).getBoundingClientRect();
+    for (let zombie_level_02 of displayedZombies_level_02) {
+        var bulletPosition_level_02 = bullet_level_02.getBoundingClientRect();
+        var zombiePosition_level_02 = $(zombie_level_02).get(0).getBoundingClientRect();
 
-        if (bulletPosition.right <= zombiePosition.right && bulletPosition.left >= zombiePosition.left &&
-            bulletPosition.top >= zombiePosition.top && bulletPosition.bottom <= zombiePosition.bottom) {
-            $(zombie).css('display', 'none');
+        if (bulletPosition_level_02.right <= zombiePosition_level_02.right && bulletPosition_level_02.left >= zombiePosition_level_02.left &&
+            bulletPosition_level_02.top >= zombiePosition_level_02.top && bulletPosition_level_02.bottom <= zombiePosition_level_02.bottom) {
+            $(zombie_level_02).css('display', 'none');
 
             // Calculate Score
-            $("#txtScore").val(parseInt($("#txtScore").val()) + 5);
+            $("#txtScore-level_02").val(parseInt($("#txtScore-level_02").val()) + 5);
         }
     }
 }
 
 var count = 0;
 
-function moveZombies() {
-    var displayedZombies = $('.display-zombies');
+function moveZombies_level_02() {
+    var displayedZombies_level_02 = $('.display-zombies-level_02');
 
-    for (let zombie of displayedZombies) {
-        var randomValue = Math.floor((Math.random() * 50) + 5);
+    for (let zombie_level_02 of displayedZombies_level_02) {
+        var randomValue_level_02 = Math.floor((Math.random() * 50) + 5);
 
-        var existTopValue = parseInt($(zombie).css('top'));
-        var newTopValue = existTopValue + randomValue;
-        $(zombie).css('top', newTopValue + "px");
+        var existTopValue_level_02 = parseInt($(zombie_level_02).css('top'));
+        var newTopValue_level_02 = existTopValue_level_02 + randomValue_level_02;
+        $(zombie_level_02).css('top', newTopValue_level_02 + "px");
 
-        if (newTopValue > 679) {
+        if (newTopValue_level_02 > 679) {
             // count++;
-            $('#rocket').css('display', 'none');
-            clearInterval(intervalID);
-            clearInterval(movZomIntervalID);
+            $('#rocket-level_02').css('display', 'none');
+            clearInterval(intervalID_level_02);
+            clearInterval(movZomIntervalID_level_02);
 
-            $('#gameLost_play_time').text("Time : " + $('#lblTime').text());
-            $('#gameLost_your_score').text("Your Score : " + $('#txtScore').val());
+            $('#gameLost_play_time-level_02').text("Time : " + $('#lblTime-level_02').text());
+            $('#gameLost_your_score-level_02').text("Your Score : " + $('#txtScore-level_02').val());
 
-            $('#gameLostModal').modal('show');
-            $('#gameLostModal').show();
+            $('#gameLostModal-level_02').modal('show');
+            $('#gameLostModal-level_02').show();
         }
 
-        var destroyedZombiesCount = 0;
+        var destroyedZombiesCount_level_02 = 0;
 
-        if ($('.hs').css('display') === 'block') {
-            for (let i = 0; i < displayedZombies.length; i++) {
-                if ($(displayedZombies[i]).css('display') === "none") {
-                    destroyedZombiesCount++;
+        if ($('.hs-level_02').css('display') === 'block') {
+            for (let i = 0; i < displayedZombies_level_02.length; i++) {
+                if ($(displayedZombies_level_02[i]).css('display') === "none") {
+                    destroyedZombiesCount_level_02++;
                 }
             }
         }
 
-        if (destroyedZombiesCount === displayedZombies.length) {
-            $('#rocket').css('display', 'none');
-            clearInterval(intervalID);
-            clearInterval(movZomIntervalID);
+        if (destroyedZombiesCount_level_02 === displayedZombies_level_02.length) {
+            $('#rocket-level_02').css('display', 'none');
+            clearInterval(intervalID_level_02);
+            clearInterval(movZomIntervalID_level_02);
 
-            $('#play_time').text("Time : " + $('#lblTime').text());
-            $('#your_score').text("Your Score : " + $('#txtScore').val());
+            $('#play_time-level_02').text("Time : " + $('#lblTime-level_02').text());
+            $('#your_score-level_02').text("Your Score : " + $('#txtScore-level_02').val());
 
-            $('#gameWinModal').modal('show');
-            $('#gameWinModal').show();
+            $('#gameWinModal-level_02').modal('show');
+            $('#gameWinModal-level_02').show();
         }
     }
 }
 
-function modalNeeds() {
-    clearInterval(intervalID);
-    clearInterval(movZomIntervalID);
-    $('.display-zombies').css('top', '0px');
-    $('.display-zombies').css('display', 'none');
+function modalNeeds_level_02() {
+    clearInterval(intervalID_level_02);
+    clearInterval(movZomIntervalID_level_02);
+    $('.display-zombies-level_02').css('top', '0px');
+    $('.display-zombies-level_02').css('display', 'none');
 
-    $('#rocket').css({left: "auto"});
+    $('#rocket-level_02').css({left: "auto"});
 
-    milliseconds = 0;
-    seconds = 0;
-    minutes = 0;
+    milliseconds_level_02 = 0;
+    seconds_level_02 = 0;
+    minutes_level_02 = 0;
 
-    $('#btnStartPlay').css('display', 'block');
-    $('#lblTime').text("00 : 00 : 00");
-    $('#txtScore').val("0");
+    $('#btnStartPlay-level_02').css('display', 'block');
+    $('#lblTime-level_02').text("00 : 00 : 00");
+    $('#txtScore-level_02').val("0");
 }
 
-$('#btnPlayAgain').on('click', function () {
-    $('#gameWinModal').modal('hide');
-    modalNeeds();
+$('#btnPlayAgain-level_02').on('click', function () {
+    $('#gameWinModal-level_02').modal('hide');
+    modalNeeds_level_02();
 });
 
-$('#gameLostBtnTryAgain').on('click', function () {
-    $('#gameLostModal').modal('hide');
-    modalNeeds();
+$('#gameLostBtnTryAgain-level_02').on('click', function () {
+    $('#gameLostModal-level_02').modal('hide');
+    modalNeeds_level_02();
 });

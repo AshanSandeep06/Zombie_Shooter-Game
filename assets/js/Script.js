@@ -1,10 +1,7 @@
 /* ---------------------------------------------- Level 01 -------------------------------------------------------- */
 
 let [milliseconds, seconds, minutes] = [0, 0, 0];
-
 let time = $('#lblTime');
-let time_level_02 = $('#lblTime-level_02');
-
 let intervalID = -1;
 $("#txtScore").val(0);
 let movZomIntervalID = -1;
@@ -12,12 +9,21 @@ let movZomIntervalID = -1;
 $(function () {
     $('#level_1_section').css('display', 'none');
     $('#level_2_section').css('display', 'none');
+
     $('.hs, .bullet').css('display', 'none');
+    $('.hs-level_02, .bullet').css('display', 'none');
+
     $('#btnStartPlay').css('display', 'block');
+    $('#btnStartPlay-level_02').css('display', 'block');
 
     /* For GameWin modal (This modal is not closed when click outside of this modal) */
     $('#gameWinModal').modal({backdrop: 'static', keyboard: false});
+    $('#gameWinModal-level_02').modal({backdrop: 'static', keyboard: false});
+
     $('#gameLostModal').modal({backdrop: 'static', keyboard: false});
+    $('#gameLostModal-level_02').modal({backdrop: 'static', keyboard: false});
+
+    $('#rocket-level_02').css({left: "auto"});
 });
 
 $('#btnPlay').on('click', function () {
@@ -223,4 +229,12 @@ $('#btnPlayAgain').on('click', function () {
 $('#gameLostBtnTryAgain').on('click', function () {
     $('#gameLostModal').modal('hide');
     modalNeeds();
+});
+
+$('#btnNext').on('click', function () {
+    $('#level_1_section').css('display', 'none');
+    $('#level_2_section').fadeIn(1000);
+
+    $('#gameWinModal').modal('hide');
+    $('#gameLostModal').modal('hide');
 });
