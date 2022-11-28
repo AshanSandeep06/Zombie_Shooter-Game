@@ -462,3 +462,15 @@ div {
 #gameLostBtnTryAgain-level_02:hover {
     background-color: #bb2d3b;
 }
+
+#btnNext{
+    position: relative;
+}
+
+a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
