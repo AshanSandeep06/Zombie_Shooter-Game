@@ -264,8 +264,24 @@ $('#gameLostBtnTryAgain').on('click', function () {
 $('#btnNext').on('click', function () {
     if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         $('#level_1_section').css('display', 'none');
-        $('#level_2_section').fadeIn(1000);
+        $('#level_4_section').fadeIn(1000);
+
         $('#gameWinModal').modal('hide');
         $('#gameLostModal').modal('hide');
+
+        clearInterval(intervalID);
+        clearInterval(movZomIntervalID);
+        $('.display-zombies').css('top', '0px');
+        $('.display-zombies').css('display', 'none');
+
+        $('#rocket').css({left: "auto"});
+
+        milliseconds = 0;
+        seconds = 0;
+        minutes = 0;
+
+        $('#btnStartPlay').css('display', 'block');
+        $('#lblTime').text("00 : 00 : 00");
+        $('#txtScore').val("0");
     }
 });

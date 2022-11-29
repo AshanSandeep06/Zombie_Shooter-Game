@@ -219,5 +219,20 @@ $('#btnNext-level_03').on('click', function () {
 
         $('#gameWinModal-level_03').modal('hide');
         $('#gameLostModal-level_03').modal('hide');
+
+        clearInterval(intervalID_level_03);
+        clearInterval(movZomIntervalID_level_03);
+        $('.display-zombies-level_03').css('top', 'revert-layer');
+        $('.display-zombies-level_03').css('display', 'none');
+
+        $('#rocket-level_03').css({left: "auto"});
+
+        milliseconds_level_03 = 0;
+        seconds_level_03 = 0;
+        minutes_level_03 = 0;
+
+        $('#btnStartPlay-level_03').css('display', 'block');
+        $('#lblTime-level_03').text("00 : 00 : 00");
+        $('#txtScore-level_03').val("0");
     }
 });

@@ -220,5 +220,20 @@ $('#btnNext-level_04').on('click', function () {
 
         $('#gameWinModal-level_04').modal('hide');
         $('#gameLostModal-level_04').modal('hide');
+
+        clearInterval(intervalID_level_04);
+        clearInterval(movZomIntervalID_level_04);
+        $('.display-zombies-level_04').css('top', 'revert-layer');
+        $('.display-zombies-level_04').css('display', 'none');
+
+        $('#rocket-level_04').css({left: "auto"});
+
+        milliseconds_level_04 = 0;
+        seconds_level_04 = 0;
+        minutes_level_04 = 0;
+
+        $('#btnStartPlay-level_04').css('display', 'block');
+        $('#lblTime-level_04').text("00 : 00 : 00");
+        $('#txtScore-level_04').val("0");
     }
 });
