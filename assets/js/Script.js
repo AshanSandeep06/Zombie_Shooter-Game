@@ -264,6 +264,8 @@ $('#gameLostBtnTryAgain').on('click', function () {
 $('#btnNext').on('click', function () {
     if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         $('#level_1_section').css('display', 'none');
+
+        /* wewewewewe */
         $('#level_4_section').fadeIn(1000);
 
         $('#gameWinModal').modal('hide');

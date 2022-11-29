@@ -718,3 +718,118 @@ a {
     width: 90px;
     height: 163px;
 }
+
+#level_4_gamePlayContainer > div:nth-child(4) {
+    left: 189px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(5) {
+    left: 19vw;
+    top: 29px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(6) {
+    left: 27.5vw;
+    top: 7px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(7) {
+    left: 34vw;
+    top: -38px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(8) {
+    left: 41vw;
+}
+
+#level_4_gamePlayContainer > div:nth-child(9) {
+    top: -69px;
+    left: 49vw;
+}
+
+#level_4_gamePlayContainer > div:nth-child(10) {
+    top: 115px;
+    left: 48vw;
+}
+
+#level_4_gamePlayContainer > div:nth-child(11) {
+    left: 57vw;
+    top: 37px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(12) {
+    left: 65vw;
+    top: 7px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(13) {
+    left: 76vw;
+    top: 7px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(14) {
+    left: 71vw;
+    top: -197px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(15) {
+    left: 62vw;
+    top: -258px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(16) {
+    left: 31vw;
+    top: -325px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(17) {
+    left: 18vw;
+    top: -200px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(18) {
+    left: 25vw;
+    top: -300px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(19) {
+    left: 56vw;
+    top: -120px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(20) {
+    left: 33vw;
+    top: -400px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(21) {
+    left: 54vw;
+    top: -223px;
+}
+
+#level_4_gamePlayContainer > div:nth-child(22) {
+    left: 42vw;
+    top: -359px;
+}
+
+/* ------------------- */
+
+#level_4_gamePlayContainer > div:nth-child(23) {
+    top: 115px;
+    left: 48vw;
+}
+
+#level_4_gamePlayContainer > div:nth-child(24) {
+    top: 115px;
+    left: 48vw;
+}
+
+#level_4_gamePlayContainer > div:nth-child(25) {
+    top: 115px;
+    left: 48vw;
+}
+
+#level_4_gamePlayContainer > div:nth-child(26) {
+    top: 115px;
+    left: 48vw;
+}
