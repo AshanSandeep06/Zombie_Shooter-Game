@@ -693,3 +693,7 @@ a {
     left: 28px;
     top: 33px;
 }
+
+#level_4_gamePlayContainer > img:first-child {
+    border-radius: 0;
+}
