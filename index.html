@@ -516,6 +516,183 @@
     </div>
 </main>
 
+<!-- Level 4 -->
+<main class="row justify-content-center align-items-center" id="level_4_section">
+    <section id="level_4_gamePlayContainer" class="border border-1 border-white">
+        <img alt="Background Image" src="assets/img/photo4.jpg">
+
+        <!-- Play Button -->
+        <div id="btnStartPlay-level_04" class="animate__animated animate__flip"></div>
+
+        <!-- Rocket div -->
+        <div style="left: auto;" id="rocket-level_04" class="hs-level_04">
+            <img src="assets/img/rocket9.png" alt="Rocket_image">
+        </div>
+
+        <!-- Zombies div -->
+        <div class="zombies display-zombies-level_04 hs-level_04">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie18.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie4.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie20.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie18.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie4.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie20.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie4.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie4.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie20.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie4.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie4.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+        <div class="zombies hs-level_04 display-zombies-level_04">
+            <img src="assets/img/zombie6.png" alt="Zombie Image">
+        </div>
+
+    </section>
+
+    <!-- Score div -->
+    <div>
+        <label id="score-label-level_04" class="form-label" for="txtScore-level_04">Score :</label>
+        <input class="form-control" disabled id="txtScore-level_04" type="text">
+    </div>
+
+    <!-- Time And Level div -->
+    <div>
+        <label class="form-label" id="lblTime-level_04">00 : 00 : 00</label>
+        <label class="form-label" id="lblLevel-level_04">Level 4</label>
+    </div>
+
+    <!-- ===================================================================================================== -->
+
+    <!-- Game Win Modal -->
+    <div class="modal fade" id="gameWinModal-level_04" tabindex="-1"
+         aria-labelledby="exampleModalLabel2"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Game Over</h5>
+                    <div class="progress progressBar">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                             aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal-body">
+                    <h5 class="" id="play_time-level_04">Time : 00:00</h5>
+                    <h5 class="" id="your_score-level_04">Your Score : 0</h5>
+                    <h1 class="victory">Victory</h1>
+                    <img src="assets/img/victory-img_01.png" alt="Victory_image">
+                </div>
+
+
+                <div class="modal-footer row">
+                    <button id="btnPlayAgain-level_04" type="button" class="btn btn-primary col-3">Play Again</button>
+                    <button id="btnNext-level_04" type="button" class="btn btn-success col-2">Next</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===================================================================================================== -->
+
+    <!-- Game Lost Modal -->
+    <div class="modal fade" id="gameLostModal-level_04" tabindex="-1"
+         aria-labelledby="exampleModalLabel2"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gameLostModalTitle-level_04">Game Over</h5>
+                    <div class="progress progressBar">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                             aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal-body">
+                    <h5 class="" id="gameLost_play_time-level_04">Time : 00:00</h5>
+                    <h5 class="" id="gameLost_your_score-level_04">Your Score : 0</h5>
+                    <img src="assets/img/defeat-image.png" alt="Defeat_image">
+                </div>
+
+
+                <div class="modal-footer row">
+                    <button id="gameLostBtnTryAgain-level_04" type="button" class="btn btn-danger col-3">Try Again
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
 <!--jQuery for javaScript-->
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 
