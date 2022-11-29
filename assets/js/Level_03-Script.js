@@ -87,7 +87,7 @@ function fireBullets_level_03(rocketPosition_level_03) {
                 clearInterval(moveBullet_level_03);
             }
 
-            bullet_level_03.css('left', rocketPosition_level_03.left + "px");
+            bullet_level_03.css('left', rocketPosition_level_03.left + 30 + "px");
             bullet_level_03.css('display', 'block');
             bullet_level_03.css('bottom', bulletPosition_level_03 + 10 + "px");
 

@@ -285,7 +285,9 @@ div {
     bottom: 124px;
 
     left: 478px;
-    width: 86px;
+    /*width: 86px;*/
+
+    width: 24px;
 
     /*  2022-11-24
      left: 504px;

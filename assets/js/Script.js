@@ -117,7 +117,7 @@ function fireBullets(rocketPosition) {
                 clearInterval(moveBullet);
             }
 
-            bullet.css('left', rocketPosition.left + "px");
+            bullet.css('left', rocketPosition.left + 30 + "px");
             bullet.css('display', 'block');
             bullet.css('bottom', bulletPosition + 10 + "px");
 
