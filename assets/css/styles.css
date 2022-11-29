@@ -677,16 +677,24 @@ a {
 }
 
 #level_4_gamePlayContainer {
-    width: 1362px;
-    height: 93%;
+    /* width: 1362px; */
+    /* height: 93%; */
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+}
+
+#level_4_gamePlayContainer > img{
+    border-radius: 0;
 }
 
 #level_4_section > div:nth-child(2) {
-    right: 103px;
+    width: 275px;
+    right: 28px;
     top: 33px;
 }
 
 #level_4_section > div:nth-child(3) {
-    left: 103px;
+    left: 28px;
     top: 33px;
 }
