@@ -36,7 +36,7 @@ $('#btnPlay').on('click', function () {
 });
 
 function displayTimer() {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         milliseconds += 10;
         if (milliseconds === 1000) {
             milliseconds = 0;
@@ -56,7 +56,7 @@ function displayTimer() {
 }
 
 $('#btnStartPlay').on('click', function () {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         clearInterval(intervalID);
         intervalID = setInterval(displayTimer, 10);
 
@@ -71,7 +71,7 @@ $('#btnStartPlay').on('click', function () {
 
 /* To Move the rocket to left or right and sending bullets */
 $(document).on('keydown', function (event) {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         var rocketPosition = $("#rocket").position();
 
         // To Move left, the Rocket
@@ -104,7 +104,7 @@ $(document).on('keydown', function (event) {
 });
 
 function fireBullets(rocketPosition) {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         var bullet = $('<div>');
         bullet.css('display', 'none');
         bullet.attr('class', 'bullet');
@@ -127,7 +127,7 @@ function fireBullets(rocketPosition) {
 }
 
 $(document).on('keyup', function (event) {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         if ($('.hs').css('display') === 'block') {
             if (event.keyCode === 38 || event.keyCode === 32) {
                 var shootSound = new Audio('assets/audio/ShootSound.mp3');
@@ -152,7 +152,7 @@ $(document).on('keyup', function (event) {
 }*/
 
 function destroyingZombies(bullet) {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         var displayedZombies = $('.display-zombies');
 
         for (let zombie of displayedZombies) {
@@ -173,7 +173,7 @@ function destroyingZombies(bullet) {
 var count = 0;
 
 function moveZombies() {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         var displayedZombies = $('.display-zombies');
 
         for (let zombie of displayedZombies) {
@@ -224,7 +224,7 @@ function moveZombies() {
 }
 
 function modalNeeds() {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         clearInterval(intervalID);
         clearInterval(movZomIntervalID);
         $('.display-zombies').css('top', '0px');
@@ -243,21 +243,21 @@ function modalNeeds() {
 }
 
 $('#btnPlayAgain').on('click', function () {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         $('#gameWinModal').modal('hide');
         modalNeeds();
     }
 });
 
 $('#gameLostBtnTryAgain').on('click', function () {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         $('#gameLostModal').modal('hide');
         modalNeeds();
     }
 });
 
 $('#btnNext').on('click', function () {
-    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
+    if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         $('#level_1_section').css('display', 'none');
         $('#level_2_section').fadeIn(1000);
 
