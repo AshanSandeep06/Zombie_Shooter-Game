@@ -34,7 +34,7 @@ $('#btnStartPlay-level_03').on('click', function () {
         $('#btnStartPlay-level_03').fadeOut(500);
         $('.hs-level_03').fadeIn(1000);
 
-        // movZomIntervalID_level_03 = window.setInterval(moveZombies_level_03, 750);
+        movZomIntervalID_level_03 = window.setInterval(moveZombies_level_03, 700);
     }
 });
 
@@ -183,7 +183,7 @@ function modalNeeds_level_03() {
     if ($('#level_3_section').css('display') !== 'none' && $('#level_1_section').css('display') === 'none' && $('#level_2_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         clearInterval(intervalID_level_03);
         clearInterval(movZomIntervalID_level_03);
-        $('.display-zombies-level_03').css('top', '0px');
+        $('.display-zombies-level_03').css('top', 'revert-layer');
         $('.display-zombies-level_03').css('display', 'none');
 
         $('#rocket-level_03').css({left: "auto"});
