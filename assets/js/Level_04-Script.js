@@ -83,7 +83,7 @@ function fireBullets_level_04(rocketPosition_level_04) {
         var moveBullet_level_04 = setInterval(function () {
             var bulletPosition_level_04 = parseInt(window.getComputedStyle($(bullet_level_04).get(0)).getPropertyValue("bottom"));
 
-            if (bulletPosition_level_04 > 700) {
+            if (bulletPosition_level_04 > 730) {
                 clearInterval(moveBullet_level_04);
             }
 
