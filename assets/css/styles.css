@@ -667,7 +667,7 @@ a {
     height: 95%;
 }
 
-#btnStartPlay-level_03 {
+#btnStartPlay-level_03, #btnStartPlay-level_04 {
     left: auto;
 }
 
@@ -676,3 +676,17 @@ a {
     height: 133px;
 }
 
+#level_4_gamePlayContainer {
+    width: 1362px;
+    height: 93%;
+}
+
+#level_4_section > div:nth-child(2) {
+    right: 103px;
+    top: 33px;
+}
+
+#level_4_section > div:nth-child(3) {
+    left: 103px;
+    top: 33px;
+}
