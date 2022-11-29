@@ -34,7 +34,7 @@ $('#btnStartPlay-level_03').on('click', function () {
         $('#btnStartPlay-level_03').fadeOut(500);
         $('.hs-level_03').fadeIn(1000);
 
-        movZomIntervalID_level_03 = window.setInterval(moveZombies_level_03, 850);
+        // movZomIntervalID_level_03 = window.setInterval(moveZombies_level_03, 850);
     }
 });
 
