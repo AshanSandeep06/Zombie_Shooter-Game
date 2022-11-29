@@ -47,13 +47,13 @@ $(document).on('keydown', function (event) {
 
         // To Move left, the Rocket
         // 37 ---> ArrowLeft
-        if (event.keyCode === 37 && rocketPosition_level_04.left > 0) {
+        if (event.keyCode === 37 && rocketPosition_level_04.left > 179) {
             $("#rocket-level_04").css('left', rocketPosition_level_04.left - 15 + 'px');
         }
 
         // To Move right, the Rocket
         // 39 ---> ArrowRight
-        if (event.keyCode === 39 && rocketPosition_level_04.left < 1051) {
+        if (event.keyCode === 39 && rocketPosition_level_04.left < 1230) {
             $("#rocket-level_04").css('left', rocketPosition_level_04.left + 15 + 'px');
         }
 
