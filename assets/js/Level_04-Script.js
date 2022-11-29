@@ -184,7 +184,7 @@ function modalNeeds_level_04() {
     if ($('#level_4_section').css('display') !== 'none' && $('#level_1_section').css('display') === 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
         clearInterval(intervalID_level_04);
         clearInterval(movZomIntervalID_level_04);
-        $('.display-zombies-level_04').css('top', '0px');
+        $('.display-zombies-level_04').css('top', 'revert-layer');
         $('.display-zombies-level_04').css('display', 'none');
 
         $('#rocket-level_04').css({left: "auto"});
