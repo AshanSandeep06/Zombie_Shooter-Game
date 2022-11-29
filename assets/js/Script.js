@@ -10,23 +10,28 @@ $(function () {
     $('#level_1_section').css('display', 'none');
     $('#level_2_section').css('display', 'none');
     $('#level_3_section').css('display', 'none');
+    $('#level_4_section').css('display', 'none');
 
     $('.hs, .bullet').css('display', 'none');
     $('.hs-level_02, .bullet').css('display', 'none');
     $('.hs-level_03, .bullet').css('display', 'none');
+    $('.hs-level_04, .bullet').css('display', 'none');
 
     $('#btnStartPlay').css('display', 'block');
     $('#btnStartPlay-level_02').css('display', 'block');
     $('#btnStartPlay-level_03').css('display', 'block');
+    $('#btnStartPlay-level_04').css('display', 'block');
 
     /* For GameWin modal (This modal is not closed when click outside of this modal) */
     $('#gameWinModal').modal({backdrop: 'static', keyboard: false});
     $('#gameWinModal-level_02').modal({backdrop: 'static', keyboard: false});
     $('#gameWinModal-level_03').modal({backdrop: 'static', keyboard: false});
+    $('#gameWinModal-level_04').modal({backdrop: 'static', keyboard: false});
 
     $('#gameLostModal').modal({backdrop: 'static', keyboard: false});
     $('#gameLostModal-level_02').modal({backdrop: 'static', keyboard: false});
     $('#gameLostModal-level_03').modal({backdrop: 'static', keyboard: false});
+    $('#gameLostModal-level_04').modal({backdrop: 'static', keyboard: false});
 });
 
 $('#btnPlay').on('click', function () {
