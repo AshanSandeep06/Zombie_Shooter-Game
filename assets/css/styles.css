@@ -577,7 +577,7 @@ a {
 
 #level_3_gamePlayContainer > div:nth-child(6) {
     top: 88px;
-    left: 16vw;
+    left: 17vw;
 }
 
 #level_3_gamePlayContainer > div:nth-child(7) {
@@ -596,16 +596,16 @@ a {
 
 #level_3_gamePlayContainer > div:nth-child(10) {
     top: 75px;
-    left: 48vw;
+    left: 50vw;
 }
 
 #level_3_gamePlayContainer > div:nth-child(11) {
-    left: 54vw;
+    left: 58vw;
 }
 
 #level_3_gamePlayContainer > div:nth-child(12) {
     top: 50px;
-    left: 64vw;
+    left: 66.5vw;
 }
 
 #level_3_gamePlayContainer > div:nth-child(13) {
@@ -624,12 +624,12 @@ a {
 }
 
 #level_3_gamePlayContainer > div:nth-child(16) {
-    left: 29vw;
+    left: 36vw;
     top: -88px;
 }
 
 #level_3_gamePlayContainer > div:nth-child(17) {
-    left: 37vw;
+    left: 51vw;
     top: -141px;
 }
 
