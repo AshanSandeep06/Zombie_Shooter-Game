@@ -704,17 +704,17 @@ a {
     background-color: #12014a;
 }
 
-#level_4_gamePlayContainer > div:nth-child(5) > img, #level_4_gamePlayContainer > div:nth-child(10) > img, #level_4_gamePlayContainer > div:nth-child(12) > img, #level_4_gamePlayContainer > div:nth-child(16) > img {
+#level_4_gamePlayContainer > div:nth-child(5) > img, #level_4_gamePlayContainer > div:nth-child(10) > img, #level_4_gamePlayContainer > div:nth-child(12) > img, #level_4_gamePlayContainer > div:nth-child(16) > img, #level_4_gamePlayContainer > div:nth-child(29) > img, #level_4_gamePlayContainer > div:nth-child(31) > img, #level_4_gamePlayContainer > div:nth-child(34) > img {
     width: 140px;
     height: 169px;
 }
 
-#level_4_gamePlayContainer > div:nth-child(6) > img, #level_4_gamePlayContainer > div:nth-child(9) > img, #level_4_gamePlayContainer > div:nth-child(18) > img {
+#level_4_gamePlayContainer > div:nth-child(6) > img, #level_4_gamePlayContainer > div:nth-child(9) > img, #level_4_gamePlayContainer > div:nth-child(18) > img, #level_4_gamePlayContainer > div:nth-child(24) > img, #level_4_gamePlayContainer > div:nth-child(33) > img {
     width: 91px;
     height: 156px;
 }
 
-#level_4_gamePlayContainer > div:nth-child(7) > img, #level_4_gamePlayContainer > div:nth-child(15) > img, #level_4_gamePlayContainer > div:nth-child(21) > img, #level_4_gamePlayContainer > div:nth-child(8) > img, #level_4_gamePlayContainer > div:nth-child(13) > img, #level_4_gamePlayContainer > div:nth-child(17) > img {
+#level_4_gamePlayContainer > div:nth-child(7) > img, #level_4_gamePlayContainer > div:nth-child(15) > img, #level_4_gamePlayContainer > div:nth-child(21) > img, #level_4_gamePlayContainer > div:nth-child(8) > img, #level_4_gamePlayContainer > div:nth-child(13) > img, #level_4_gamePlayContainer > div:nth-child(17) > img, #level_4_gamePlayContainer > div:nth-child(22) > img, #level_4_gamePlayContainer > div:nth-child(26) > img, #level_4_gamePlayContainer > div:nth-child(32) > img {
     width: 90px;
     height: 163px;
 }
