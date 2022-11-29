@@ -697,3 +697,9 @@ a {
 #level_4_gamePlayContainer > img:first-child {
     border-radius: 0;
 }
+
+/* Background-colors */
+#level_2_section{
+    /*background-color: #11033f;*/
+    background-color: #12014a;
+}
