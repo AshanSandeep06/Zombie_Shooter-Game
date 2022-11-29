@@ -269,7 +269,7 @@ div {
     height: 145px;
 }
 
-#level_3_gamePlayContainer > div:nth-child(7) > img, #level_3_gamePlayContainer > div:nth-child(10) > img {
+#level_3_gamePlayContainer > div:nth-child(7) > img, #level_3_gamePlayContainer > div:nth-child(10) > img, #level_3_gamePlayContainer > div:nth-child(15) > img {
     width: 110px;
     height: 133px;
 }
