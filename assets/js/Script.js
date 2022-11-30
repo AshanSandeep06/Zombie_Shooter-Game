@@ -5,6 +5,7 @@ let time = $('#lblTime');
 let intervalID = -1;
 $("#txtScore").val(0);
 let movZomIntervalID = -1;
+let audioIntervalId = -1;
 
 const background_music = document.createElement('audio');
 background_music.setAttribute('src', 'assets/audio/Background-music.mp3');
@@ -22,14 +23,24 @@ const game_over = new Audio('assets/audio/GameOverSound.mp3');
 
 const audioArray = [];
 audioArray.push(new Audio('assets/audio/laugh.mp3'));
-audioArray.push(new Audio('assets/audio/Sound-01'));
-audioArray.push(new Audio('assets/audio/Sound-02'));
-audioArray.push(new Audio('assets/audio/Sound-03'));
-audioArray.push(new Audio('assets/audio/Sound-04'));
-audioArray.push(new Audio('assets/audio/Sound-05'));
-audioArray.push(new Audio('assets/audio/Sound-06'));
-audioArray.push(new Audio('assets/audio/Sound-07'));
+audioArray.push(new Audio('assets/audio/Sound-01.mp3'));
+audioArray.push(new Audio('assets/audio/Sound-03.wav'));
+audioArray.push(new Audio('assets/audio/Sound-05.wav'));
+audioArray.push(new Audio('assets/audio/Sound-06.mp3'));
+audioArray.push(new Audio('assets/audio/Sound-07.mp3'));
 
+var index = 0;
+function playAudios() {
+    audioArray[index].pause();
+    index = Math.floor(Math.random() * 6);
+    audioArray[index].play();
+}
+
+function pauseAudios() {
+    for (let audio of audioArray) {
+        audio.pause();
+    }
+}
 
 $(function () {
     $('#level_1_section').css('display', 'none');
@@ -94,6 +105,10 @@ $('#btnStartPlay').on('click', function () {
         $('.hs').fadeIn(1000);
 
         movZomIntervalID = window.setInterval(moveZombies, 950);
+
+        clearInterval(audioIntervalId);
+        pauseAudios();
+        audioIntervalId = setInterval(playAudios, 4500);
     }
 });
 
@@ -228,6 +243,9 @@ function moveZombies() {
 
                     // game_over.loop = true;
                     game_over.play();
+
+                    clearInterval(audioIntervalId);
+                    pauseAudios();
                 }
             }
 
@@ -251,6 +269,9 @@ function moveZombies() {
 
                 $('#gameWinModal').modal('show');
                 $('#gameWinModal').show();
+
+                clearInterval(audioIntervalId);
+                pauseAudios();
             }
         }
     }
@@ -280,6 +301,10 @@ $('#btnPlayAgain').on('click', function () {
         $('#gameWinModal').modal('hide');
         modalNeeds();
         game_over.pause();
+
+        clearInterval(audioIntervalId);
+        pauseAudios();
+        audioIntervalId = setInterval(playAudios, 3000);
     }
 });
 
@@ -288,6 +313,10 @@ $('#gameLostBtnTryAgain').on('click', function () {
         $('#gameLostModal').modal('hide');
         modalNeeds();
         game_over.pause();
+
+        clearInterval(audioIntervalId);
+        pauseAudios();
+        audioIntervalId = setInterval(playAudios, 3000);
     }
 });
 
