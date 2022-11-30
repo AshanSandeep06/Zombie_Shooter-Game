@@ -6,6 +6,21 @@ let intervalID = -1;
 $("#txtScore").val(0);
 let movZomIntervalID = -1;
 
+var background_music = document.createElement('audio');
+background_music.setAttribute('src', 'assets/audio/Background-music.mp3');
+
+$(window).on('load', function (){
+    background_music.play();
+});
+
+/*background_music.addEventListener("canplaythrough", () => {
+    background_music.play().catch(e => {
+        window.addEventListener('click', function () {
+            background_music.play();
+        });
+    })
+});*/
+
 $(function () {
     $('#level_1_section').css('display', 'none');
     $('#level_2_section').css('display', 'none');
