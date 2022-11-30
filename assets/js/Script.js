@@ -33,6 +33,7 @@ background_music.setAttribute('src', 'assets/audio/Background-music.mp3');
 });*/
 
 const laugh = new Audio('assets/audio/laugh.mp3');
+const game_over = new Audio('assets/audio/GameOverSound.mp3');
 
 const audioArray = [];
 
@@ -231,8 +232,9 @@ function moveZombies() {
 
                     $('#gameLostModal').modal('show');
                     $('#gameLostModal').show();
-                    laugh.loop = true;
-                    laugh.play();
+
+                    // game_over.loop = true;
+                    game_over.play();
                 }
             }
 
@@ -284,7 +286,7 @@ $('#btnPlayAgain').on('click', function () {
     if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         $('#gameWinModal').modal('hide');
         modalNeeds();
-        laugh.pause();
+        game_over.pause();
     }
 });
 
@@ -292,7 +294,7 @@ $('#gameLostBtnTryAgain').on('click', function () {
     if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         $('#gameLostModal').modal('hide');
         modalNeeds();
-        laugh.pause();
+        game_over.pause();
     }
 });
 
@@ -300,7 +302,7 @@ $('#btnNext').on('click', function () {
     if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         $('#level_1_section').css('display', 'none');
         $('#level_2_section').fadeIn(1000);
-        laugh.pause();
+        game_over.pause();
 
         $('#gameWinModal').modal('hide');
         $('#gameLostModal').modal('hide');
