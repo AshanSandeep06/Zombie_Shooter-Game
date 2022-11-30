@@ -1,20 +1,5 @@
 /* ---------------------------------------------- Level 01 -------------------------------------------------------- */
 
-$(window).on('load',function () {
-    var sfx = {
-        shuttle: new Howl({
-            src: ['assets/audio/Background-music.mp3'],
-            loop: true
-        }),
-        move: new Howl({
-            src: ['https://assets.codepen.io/21542/howler-push.mp3',
-            ]
-        })
-    }
-
-    sfx.shuttle.play();
-});
-
 let [milliseconds, seconds, minutes] = [0, 0, 0];
 let time = $('#lblTime');
 let intervalID = -1;
@@ -24,13 +9,13 @@ let movZomIntervalID = -1;
 const background_music = document.createElement('audio');
 background_music.setAttribute('src', 'assets/audio/Background-music.mp3');
 
-/*background_music.addEventListener("canplaythrough", () => {
+background_music.addEventListener("canplaythrough", () => {
     background_music.play().catch(e => {
         window.addEventListener('click', function () {
-            background_music.play();
+            // background_music.play();
         });
     })
-});*/
+});
 
 const laugh = new Audio('assets/audio/laugh.mp3');
 const game_over = new Audio('assets/audio/GameOverSound.mp3');
