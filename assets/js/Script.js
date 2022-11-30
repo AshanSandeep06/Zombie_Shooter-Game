@@ -21,6 +21,10 @@ const laugh = new Audio('assets/audio/laugh.mp3');
 const game_over = new Audio('assets/audio/GameOverSound.mp3');
 
 const audioArray = [];
+audioArray.push(new Audio('assets/audio/laugh.mp3'));
+audioArray.push(new Audio('assets/audio/laugh.mp3'));
+audioArray.push(new Audio('assets/audio/laugh.mp3'));
+audioArray.push(new Audio('assets/audio/laugh.mp3'));
 
 
 $(function () {
