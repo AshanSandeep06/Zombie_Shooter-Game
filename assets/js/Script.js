@@ -9,7 +9,7 @@ let movZomIntervalID = -1;
 var background_music = document.createElement('audio');
 background_music.setAttribute('src', 'assets/audio/Background-music.mp3');
 
-$(window).on('load', function (){
+$(document).ready(function (){
     background_music.play();
 });
 
