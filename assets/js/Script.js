@@ -22,9 +22,13 @@ const game_over = new Audio('assets/audio/GameOverSound.mp3');
 
 const audioArray = [];
 audioArray.push(new Audio('assets/audio/laugh.mp3'));
-audioArray.push(new Audio('assets/audio/laugh.mp3'));
-audioArray.push(new Audio('assets/audio/laugh.mp3'));
-audioArray.push(new Audio('assets/audio/laugh.mp3'));
+audioArray.push(new Audio('assets/audio/Sound-01'));
+audioArray.push(new Audio('assets/audio/Sound-02'));
+audioArray.push(new Audio('assets/audio/Sound-03'));
+audioArray.push(new Audio('assets/audio/Sound-04'));
+audioArray.push(new Audio('assets/audio/Sound-05'));
+audioArray.push(new Audio('assets/audio/Sound-06'));
+audioArray.push(new Audio('assets/audio/Sound-07'));
 
 
 $(function () {
